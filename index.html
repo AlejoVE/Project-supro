@@ -4,35 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css" type="text/css">
-    <title>Supro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Supro.</title>
 </head>
 <body>
-    <main>
-        <header class="navbar">
-            <div class="logo-header">
-                <img src="assets/img/imgHomePage/logo_supro.svg">
+    <section class="banner-home container-fluid">
+        <header class="row">
+            <div class="nav-left col-6">
+                <div class="logo-header">
+                    <a href="#"><img src="assets/img/imgHomePage/logo_supro.svg" class="img-logo" alt="logo"></a>
+                </div>
+                <nav class="nav-list-left ">
+                    <ul class="nav-ul-left">
+                        <li class="nav-li-left">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Shop</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Collection</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-header">
-                <ul>
-                    <li class="nav-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"></a></li>
-                    <li class="nav-item"><a href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"></a>
-                    </li>
-                </ul>
-            </nav>
+
+            <div class="nav-right col-6">
+                <div class="search-bar">
+                    <input type="text" class="search-bar" placeholder="Search Searching ..." maxlength="25">
+                </div>
+                <nav class="nav-list-right">
+                    <ul class="nav-ul-right">
+                        <li class="nav-li-right li-element">
+                            <a href="#"><img src="assets/img/imgIcons/loupe.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right">
+                            <a href="#"><img src="assets/img/imgIcons/user.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right">
+                            <a href="#"><img src="assets/img/imgIcons/heart.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right">
+                            <a href="#"><img src="assets/img/imgIcons/shopping-cart.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right card-svg">
+                            <a href="#"><img src="assets/img/imgIcons/menu.png" alt="icon"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-    </main>
+    </section>
 </body>
 </html>
