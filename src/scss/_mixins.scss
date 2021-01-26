@@ -34,11 +34,19 @@
 
 @mixin line {
     display:block!important;
-        position: absolute;
-        background-color: white;
-        height:12px;
-        width:100%;
-        right: 0;
-        margin:0!important;
-        padding:0!important;
+    position: absolute;
+    background-color: white;
+    height:12px;
+    width:100%;
+    right: 0;
+    margin:0!important;
+    padding:0!important;
+}
+
+@mixin p-grey {
+    color: $grey-color;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    width: max-content;
 }
