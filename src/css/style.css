@@ -250,7 +250,7 @@ header {
   background: url("../../assets/img/imgHomePage/sl3-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom 10px;
+  background-position: center bottom 0;
   width: auto;
   height: 700px;
   position: relative;
@@ -269,11 +269,13 @@ header {
     height: auto;
     text-align: center; }
   .content-banner a {
-    color: #fff !important;
+    color: #000 !important;
     font-weight: bold;
     text-transform: uppercase;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #000;
     font-size: 14px;
+    color: #fff !important;
+    border-color: #fff;
     margin-top: 30px; }
 
 .right-banner {
@@ -311,6 +313,129 @@ header {
       .right-banner ul li hr {
         width: 25px; }
 
+.footer-banner p {
+  margin: 0;
+  color: #959595;
+  font-size: 12px;
+  margin-top: 25px; }
+
+.p-banner {
+  color: #000 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  font-size: 14px; }
+
+.footer-banner-1 {
+  background: url("../../assets/img/imgHomePage/banner_h1_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 0;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .footer-banner-1 h2 {
+    width: 200px; }
+
+.footer-banner-2 {
+  background: url("../../assets/img/imgHomePage/banner_h1_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 0;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer-banner-2 h2 {
+    width: 200px; }
+
+.footer-banner-3 {
+  background: url("../../assets/img/imgHomePage/banner_h1_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 0;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+  .footer-banner-3 h2 {
+    width: 200px; }
+
+#banner-text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 10px 30px 10px 30px;
+  align-items: flex-end; }
+  #banner-text-left h2 {
+    width: 200px; }
+  #banner-text-left h2 {
+    font-size: 35px;
+    text-align: end; }
+
+#banner-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 10px 30px 10px 30px;
+  align-items: center;
+  color: white; }
+  #banner-text-middle h2 {
+    width: 200px; }
+  #banner-text-middle p {
+    color: #fff !important;
+    border-color: #fff; }
+  #banner-text-middle h2 {
+    text-align: center;
+    font-size: 35px; }
+
+#banner-text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  align-items: flex-end;
+  padding: 10px 30px 10px 30px; }
+  #banner-text-right h2 {
+    width: 200px; }
+  #banner-text-right h2 {
+    text-align: end;
+    font-size: 35px; }
+    #banner-text-right h2 hr {
+      display: none; }
+
+@media screen and (max-width: 990px) {
+  .line-banner {
+    display: block !important;
+    position: absolute;
+    background-color: white;
+    height: 12px;
+    width: 100%;
+    right: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 600px; }
+  .line-banner-footer {
+    display: block !important;
+    position: absolute;
+    background-color: white;
+    height: 12px;
+    width: 100%;
+    right: 0;
+    margin: 0 !important;
+    padding: 0 !important; } }
+
 @media screen and (max-width: 780px) {
   .banner-home {
     background: url("../../assets/img/imgHomePage/sl3-1.jpg");
@@ -321,7 +446,9 @@ header {
     height: 600px;
     position: relative; }
   .right-banner {
-    display: none !important; } }
+    display: none !important; }
+  .line-banner {
+    top: 500px; } }
 
 @media screen and (max-width: 550px) {
   .banner-home {
@@ -352,6 +479,19 @@ header {
       height: 280px !important;
       width: auto !important; }
   .right-banner {
-    display: none !important; } }
+    display: none !important; }
+  .line-banner,
+  .line-banner-footer {
+    display: none !important; }
+  .footer-banner,
+  .footer-image {
+    padding: 0 !important;
+    margin: 0 !important; }
+  #banner-text-left {
+    align-items: flex-start !important; }
+    #banner-text-left h2 {
+      text-align: start; }
+  .footer-banner h2 {
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
