@@ -70,21 +70,13 @@ a {
 
 header {
   padding: 25px 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 580px !important;
 }
 
@@ -98,21 +90,13 @@ header {
 }
 
 .nav-left nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 400px;
 }
 
 .nav-left nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: auto;
   margin: 0;
@@ -130,15 +114,9 @@ header {
 }
 
 .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 480px !important;
 }
 
@@ -158,8 +136,6 @@ header {
 }
 
 .nav-right ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: auto;
   margin: 0;
@@ -203,9 +179,7 @@ header {
   }
   .nav-right {
     width: 250px !important;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
     margin-right: -20px;
   }
   .li-element {
@@ -213,9 +187,7 @@ header {
   }
   header {
     padding: 25px 25px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     background-color: #fff;
   }
   .nav-left {
@@ -249,26 +221,3 @@ header {
     padding: 5px 10px;
   }
 }
-
-.banner-home {
-  background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -95px;
-  width: auto;
-  height: 700px;
-  position: relative;
-}
-
-@media screen and (max-width: 780px) {
-  .banner-home {
-    background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top 20px;
-    width: auto;
-    height: 600px;
-    position: relative;
-  }
-}
-/*# sourceMappingURL=style.css.map */
