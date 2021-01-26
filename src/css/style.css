@@ -172,14 +172,144 @@ header {
   .row {
     padding: 5px 10px; } }
 
+.left-banner {
+  height: 525px !important;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px 20px 50px !important; }
+  .left-banner .circle-ul {
+    display: none !important; }
+  .left-banner ul {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 12px 5px 12px; }
+    .left-banner ul .logo-google {
+      width: 18px; }
+    .left-banner ul li a {
+      padding: 5px !important;
+      height: 30px !important;
+      width: 30px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-google-plus-g,
+.fa-pinterest {
+  color: #959595 !important;
+  transition: color 0.5s !important; }
+
+.fa-twitter:hover,
+.fa-facebook-f:hover,
+.fa-google-plus-g:hover,
+.fa-pinterest:hover {
+  color: #000 !important; }
+
+.fa-google-plus-g {
+  position: relative;
+  left: 3px; }
+
+@media screen and (max-width: 1178px) {
+  .left-banner {
+    padding: 20px 27px 20px 27px !important; } }
+
+@media screen and (max-width: 550px) {
+  .sidebar-ul {
+    flex-direction: row !important;
+    height: 40px !important; }
+  .left-banner {
+    height: 80px !important;
+    width: 300px !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 0; }
+    .left-banner .circle-ul {
+      display: flex !important;
+      flex-direction: row !important;
+      width: 100px !important;
+      height: auto !important;
+      color: black !important;
+      font-size: 12px !important; }
+    .left-banner li a {
+      padding: 10px !important;
+      margin: 5px !important; }
+  .fa-twitter,
+  .fa-facebook-f,
+  .fa-google-plus-g,
+  .fa-pinterest {
+    color: #fff !important; } }
+
 .banner-home {
   background: url("../../assets/img/imgHomePage/sl3-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -95px;
+  background-position: center bottom 10px;
   width: auto;
   height: 700px;
-  position: relative; }
+  position: relative;
+  color: black; }
+
+.content-banner {
+  height: 525px !important;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  .content-banner h1 {
+    font-size: 90px;
+    width: 420px;
+    height: auto;
+    text-align: center; }
+  .content-banner a {
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    font-size: 14px;
+    margin-top: 30px; }
+
+.right-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 50px 20px 50px !important; }
+  .right-banner a:hover {
+    color: #000 !important; }
+  .right-banner ul {
+    padding: 5px 20px 5px 12px; }
+    .right-banner ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 10px;
+      justify-content: flex-end; }
+      .right-banner ul li .active {
+        color: #000 !important; }
+      .right-banner ul li a {
+        color: #959595 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        transition: 0.3s !important; }
+      .right-banner ul li p {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: end; }
+      .right-banner ul li h3 {
+        font-size: 20px;
+        text-align: end; }
+      .right-banner ul li hr {
+        width: 25px; }
 
 @media screen and (max-width: 780px) {
   .banner-home {
@@ -189,6 +319,39 @@ header {
     background-position: center top 20px;
     width: auto;
     height: 600px;
-    position: relative; } }
+    position: relative; }
+  .right-banner {
+    display: none !important; } }
+
+@media screen and (max-width: 550px) {
+  .banner-home {
+    background: url("../../assets/img/imgHomePage/sl3-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 20px;
+    width: auto;
+    height: 500px !important;
+    position: relative; }
+  .banner-row {
+    display: flex !important;
+    flex-wrap: wrap-reverse !important;
+    align-items: center;
+    height: 420px !important; }
+    .banner-row h1 {
+      width: 300px;
+      font-size: 50px; }
+  .content-middle {
+    height: 250px !important;
+    width: auto !important;
+    margin: auto;
+    margin-bottom: 20px !important;
+    display: flex;
+    justify-content: flex-end; }
+    .content-middle .content-banner {
+      display: flex;
+      height: 280px !important;
+      width: auto !important; }
+  .right-banner {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
