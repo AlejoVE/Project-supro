@@ -1,1 +1,24 @@
 @import "_navbar.scss";
+
+.banner-home {
+    background: url("../../assets/img/imgHomePage/sl3-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -95px;
+    width: auto;
+    height: 700px;
+    position: relative;
+    
+}
+
+@media screen and(max-width:780px) {
+    .banner-home {
+        background: url("../../assets/img/imgHomePage/sl3-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top 20px;
+        width: auto;
+        height: 600px;
+        position: relative;
+    }
+}

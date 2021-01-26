@@ -57,15 +57,6 @@ a {
   text-decoration: none !important;
   color: #000 !important; }
 
-.banner-home {
-  background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -95px;
-  width: auto;
-  height: 700px;
-  position: relative; }
-
 header {
   padding: 25px 50px;
   justify-content: space-between; }
@@ -164,15 +155,7 @@ header {
 
 @media screen and (max-width: 780px) {
   .nav-li-left {
-    display: none; }
-  .banner-home {
-    background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top 20px;
-    width: auto;
-    height: 600px;
-    position: relative; } }
+    display: none; } }
 
 @media screen and (max-width: 484px) {
   .nav-right {
@@ -188,5 +171,24 @@ header {
 @media screen and (max-width: 400px) {
   .row {
     padding: 5px 10px; } }
+
+.banner-home {
+  background: url("../../assets/img/imgHomePage/sl3-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -95px;
+  width: auto;
+  height: 700px;
+  position: relative; }
+
+@media screen and (max-width: 780px) {
+  .banner-home {
+    background: url("../../assets/img/imgHomePage/sl3-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 20px;
+    width: auto;
+    height: 600px;
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */
