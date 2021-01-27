@@ -1,16 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,9 +6,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -32,8 +18,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
@@ -66,25 +51,30 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 580px !important; }
-  .nav-left .logo-header {
-    width: 100px; }
-    .nav-left .logo-header img {
-      width: 70px;
-      height: auto; }
-  .nav-left nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px; }
-    .nav-left nav ul {
-      display: flex;
-      width: auto;
-      margin: 0;
-      padding: 0; }
-      .nav-left nav ul a {
-        margin: 0 5px;
-        padding: 5px 10px;
-        font-size: 13px; }
+
+.nav-left .logo-header {
+  width: 100px; }
+
+.nav-left .logo-header img {
+  width: 70px;
+  height: auto; }
+
+.nav-left nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px; }
+
+.nav-left nav ul {
+  display: flex;
+  width: auto;
+  margin: 0;
+  padding: 0; }
+
+.nav-left nav ul a {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 13px; }
 
 .nav-li-left a:hover {
   border-bottom: 1px solid #000; }
@@ -94,25 +84,29 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 480px !important; }
-  .nav-right :focus {
-    outline: none; }
-  .nav-right .search-bar {
-    border-radius: 50px;
-    border: none;
-    height: 30px;
-    width: 200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 12px;
-    position: relative; }
-  .nav-right ul {
-    display: flex;
-    width: auto;
-    margin: 0;
-    padding: 0; }
-    .nav-right ul img {
-      padding: 5px 5px;
-      margin: 0 5px; }
+
+.nav-right :focus {
+  outline: none; }
+
+.nav-right .search-bar {
+  border-radius: 50px;
+  border: none;
+  height: 30px;
+  width: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+  position: relative; }
+
+.nav-right ul {
+  display: flex;
+  width: auto;
+  margin: 0;
+  padding: 0; }
+
+.nav-right ul img {
+  padding: 5px 5px;
+  margin: 0 5px; }
 
 .search-bar:after {
   display: block;
@@ -160,8 +154,8 @@ header {
 @media screen and (max-width: 484px) {
   .nav-right {
     width: 200px !important; }
-    .nav-right li {
-      height: 30px; }
+  .nav-right li {
+    height: 30px; }
   .card-svg:after {
     right: 16px;
     width: 12px;
@@ -227,4 +221,4 @@ p {
 .text-align {
   margin-left: 2rem; }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=about.min.css.map */
