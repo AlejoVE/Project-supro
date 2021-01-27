@@ -137,6 +137,13 @@ header {
 .li-element {
   display: none; }
 
+@media screen and (max-width: 1460px) {
+  header {
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.425); }
+    header input {
+      border: 1px solid black !important; } }
+
 @media screen and (max-width: 1178px) {
   .search-bar {
     display: none; }
@@ -158,6 +165,10 @@ header {
     display: none; } }
 
 @media screen and (max-width: 484px) {
+  header {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 10; }
   .nav-right {
     width: 200px !important; }
     .nav-right li {
@@ -200,6 +211,7 @@ header {
 .fa-google-plus-g,
 .fa-pinterest {
   color: #959595 !important;
+  padding: 10px !important;
   transition: color 0.3s !important; }
 
 .fa-twitter:hover,
@@ -380,7 +392,7 @@ header {
   #banner-text-left h2 {
     width: 200px; }
   #banner-text-left h2 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: end; }
 
 #banner-text-middle {
@@ -398,7 +410,7 @@ header {
     border-color: #fff; }
   #banner-text-middle h2 {
     text-align: center;
-    font-size: 35px; }
+    font-size: 30px; }
 
 #banner-text-right {
   display: flex;
@@ -411,7 +423,7 @@ header {
     width: 200px; }
   #banner-text-right h2 {
     text-align: end;
-    font-size: 35px; }
+    font-size: 30px; }
     #banner-text-right h2 hr {
       display: none; }
 
@@ -426,7 +438,7 @@ header {
     width: 70%;
     margin: auto; }
   .title-section h2 {
-    font-size: 26px;
+    font-size: 30px;
     margin: 0;
     width: max-content; }
   .title-section p {
@@ -493,6 +505,44 @@ header {
         margin: 0;
         width: max-content;
         margin-top: 20px !important; }
+
+.shop-container {
+  width: 70% !important;
+  margin-top: 50px; }
+  .shop-container .shop-title-1 h2 {
+    font-size: 30px; }
+  .shop-container .shop-title-1 p {
+    color: #959595;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    width: max-content; }
+  .shop-container .shop-title-2 {
+    display: flex;
+    position: relative;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    width: 450px; }
+    .shop-container .shop-title-2 a {
+      color: #959595;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0;
+      width: max-content;
+      color: #959595 !important;
+      font-size: 14px !important;
+      transition: color .3s;
+      width: 100%; }
+    .shop-container .shop-title-2 a:hover {
+      color: black !important; }
+    .shop-container .shop-title-2 .active {
+      color: black !important; }
+    .shop-container .shop-title-2 ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0; }
 
 @media screen and (max-width: 990px) {
   .text-small-img {
