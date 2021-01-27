@@ -99,29 +99,48 @@
 		<!-- MAIN SECTION -->
 		<main class="main">
 			<sidebar id="sidebar">
-				<h2>Active filters</h2>
-				<ul>
-					<li>Min £9.00</li>
-					<li>Max £9.00</li>
-					<li>Remove all filter</li>
-				</ul>
-				<h2>Categories</h2>
-				<ul id="categories">
-					<li>Bags</li>
-					<li>Clothing</li>
-					<li>Hats & Gloves</li>
-					<li>Men</li>
-					<li>More accessories</li>
-					<li>Shoes</li>
-					<li>T-shirt</li>
-					<li>Wallets & Cases</li>
-					<li>Women</li>
-				</ul>
+				<div id="active-filters" class="border border-danger">
+					<h2>Active filters</h2>
+					<ul>
+						<li class="gray-text">Min £9.00</li>
+						<li class="gray-text">Max £9.00</li>
+						<li class="gray-text">Remove all filter</li>
+					</ul>
+				</div>
+				<div id="categories" class="border border-danger">
+					<h2>Categories</h2>
+					<ul id="categories">
+						<li class="gray-text">Bags</li>
+						<li class="gray-text">Clothing</li>
+						<li class="gray-text">Hats & Gloves</li>
+						<li class="gray-text">Men</li>
+						<li class="gray-text">More accessories</li>
+						<li class="gray-text">Shoes</li>
+						<li class="gray-text">T-shirt</li>
+						<li class="gray-text">Wallets & Cases</li>
+						<li class="gray-text">Women</li>
+					</ul>
+				</div>
+				<div id="filter-price" class="border border-danger">
+					<h2>Filter price</h2>
+					<img src="./assets//img/imgShop/filter-price.png" class="img-fluid" alt="filter price">
+				</div>
+				<div id="checkboxes">
+					<ul>
+					  <li ><i class="bi bi-circle-fill" id="point-black"><span class="gray-text">  Black</span></i><input type="checkbox" id="checked" checked></li>
+					  <li ><i class="bi bi-circle-fill" id="point-blue"> <span class="gray-text">  Blue</span></i><input type="checkbox"></li>
+					  <li ><i class="bi bi-circle-fill" id="point-gold"> <span class="gray-text">  Gold</span></i><input type="checkbox"></li>
+					  <li ><i class="bi bi-circle-fill" id="point-nude"> <span class="gray-text">  Nude</span></i><input type="checkbox"></li>
+					  <li ><i class="bi bi-circle-fill" id="point-orange"> <span class="gray-text">  Orange</span></i><input type="checkbox"></li>
+					  <li ><i class="bi bi-circle-fill" id="point-red"> <span class="gray-text">  Red</span></i><input type="checkbox"></li>
+					  <li>LMXSL</li>
+					</ul>
+					
+				  </div>
 
-				<h2>Filter price</h2>
-				<hr />
 			</sidebar>
 			<!-- SHOP SECTION -->
+			
 			<section id="shop">
 				<div id="shop-header">
 					<div id="shop-title">
@@ -132,17 +151,19 @@
 					<div id="shop-list">
 						<ul>
 							<li>
-								<b>25</b> found
-								<i class="bi bi-chevron-down"></i>
+								25 <span class="gray-text">Products Found</span>
 							</li>
-							<li id="filter">
+							<li class="hidden">
 								Filter<i class="bi bi-chevron-down"></i>
 							</li>
-							<li>Sort by default</li>
-							<li>
+							<li class="hidden">Sort by</li>
+							<li class="hidden"> <span class="gray-text">default</span>
+								<i class="bi bi-chevron-down"></i></li>
+							<li class=" hidden">
 								<i class="bi bi-grid-3x3-gap"></i>
-								<i class="bi bi-list"></i>
+								<i class="bi bi-list gray-text"></i>
 							</li>
+							<li id="hidden-li"><i class="bi bi-sliders"></i></li>
 						</ul>
 					</div>
 				</div>

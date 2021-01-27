@@ -5,6 +5,10 @@
 	src: url('/assets/Roboto/Roboto-Regular.ttf');
 }
 
+@mixin color($color) {
+	color: $color;
+}
+
 .main {
 	font-family: 'Roboto';
 	display: flex;
@@ -14,24 +18,89 @@
 	width: 80%;
 }
 
+input[type='checkbox'] {
+	outline: 1px solid #bdb4b4;
+	opacity: 0.2;
+}
+
+#checked {
+	opacity: 1;
+}
+
 #sidebar {
 	text-align: center;
-	border: 5px solid green;
 	width: 30%;
-
 	ul {
-		margin: auto;
-		text-align: left;
+		list-style: circle;
+	}
+
+	#active-filters {
+		margin-bottom: 25px;
+		ul {
+			margin: auto;
+			text-align: left;
+			list-style-image: url('../../assets/img/imgShop/Screenshot\ from\ 2021-01-25\ 17-14-36.png');
+		}
 	}
 
 	#categories {
 		list-style: none;
+		margin-bottom: 20px;
+		ul {
+			text-align: left;
+			li {
+				padding: 5px;
+			}
+		}
 	}
 
 	hr {
 		background-color: red;
 		height: 5px;
 		width: 50%;
+	}
+
+	h2 {
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+
+	#checkboxes {
+		margin-top: 25px;
+		ul {
+			display: flex;
+			flex-direction: column;
+			border: 2px solid pink;
+			list-style: square;
+
+			li {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 100%;
+				padding: 15px;
+
+				#point-black {
+					color: black;
+				}
+				#point-blue {
+					color: #70849d;
+				}
+				#point-gold {
+					color: #cc9a2e;
+				}
+				#point-nude {
+					color: #cfa58f;
+				}
+				#point-orange {
+					color: #cc682d;
+				}
+				#point-red {
+					color: #99231e;
+				}
+			}
+		}
 	}
 }
 
@@ -61,11 +130,12 @@
 
 		li {
 			display: inline;
-			padding-left: 5px;
+			font-weight: bold;
+			margin-left: 25px;
 		}
 
 		i {
-			margin-left: 25px;
+			margin-left: 5px;
 		}
 	}
 }
@@ -91,6 +161,10 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+
+#hidden-li {
+	visibility: hidden;
 }
 
 .image-container {
@@ -122,7 +196,7 @@
 
 .gray-text {
 	color: #a59f9f;
-	font-weight: bold;
+	font-weight: lighter;
 }
 
 @media only screen and (max-width: 767px) {
@@ -133,13 +207,44 @@
 	#shop-header {
 		flex-direction: column;
 
-		#filter {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			margin-left: 5px;
+			margin-right: 5px;
+			li {
+				margin-left: 0px;
+			}
+		}
+
+		.hidden {
 			display: none;
+		}
+
+		#hidden-li {
+			visibility: visible;
+		}
+
+		#shop-title {
+			margin-left: 5px;
+			margin-right: 5px;
 		}
 	}
 
+	#shop-list {
+		justify-content: space-between;
+	}
+
 	#sidebar {
+		text-align: left;
+		width: 100%;
 		order: 2;
+
+		h2 {
+			margin-bottom: 15px;
+		}
 	}
 
 	#shop {
