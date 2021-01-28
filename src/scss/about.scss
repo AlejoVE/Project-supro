@@ -5,13 +5,33 @@
     font-family: 'Roboto';
     src: url('/assets/Roboto/Roboto-Regular.ttf');
 }
+html{
+    overflow-x: hidden;
+}
 
+body{
+    padding: 0 1rem;
+}
 p{
     font-family: "Roboto";
 }
 
-
-
+.about{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.smilet{
+    margin-top: 4rem;
+}
+.supro{
+    margin-top: 2rem;
+}
+.supro h4 h2{
+    margin-top: 2rem;
+}
+.supro text{
+    margin-top: 4rem;
+}
 .img{
     margin-left: 160px;
 }
@@ -19,20 +39,12 @@ p{
     color:$black;
 }
 
-.text{
-    color: $text;
-}
 .subtitle{
     @include font;
 }
 .italic{
     @include italic;
 }
-.italics{
-    font-size: 25px;
-    font-style: italic;
-}
-
 
 
 .name{
@@ -41,13 +53,178 @@ font-size: 20px;
 
 .normalfont{
     @include normalfont;
+    font-size: 30px;
+    text-align: justify;
 }
 .greyfontn{
     @include founder;
 }
-.info{
-    margin-left: 6.5rem!important;
-}
+
 .text-align{
     margin-left: 2rem;
 }
+
+.image{
+    display: flex;
+}
+.ind{
+    font-weight: bolder;
+    color: $black;
+    font-size: 30px;
+}
+h5{
+    color: $salmon;
+}
+h1{
+    color: $salmon;  
+}
+.luxury{
+    @include font;
+}
+
+.text{
+    @include founder;
+}
+.from{
+    margin-top: 2rem;
+}
+.big{
+    margin-top: 6rem;
+}
+.bs{
+    @include font;
+}
+.bt p{
+    color: grey;
+}
+
+.dates .dts{
+    @include font;
+    margin-top: 2rem;
+}
+
+.ics{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.icons{
+    display: flex;
+}
+.icsupper,.icslower {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.icons p{
+    font-weight: bold;
+}
+.leadership{
+    justify-content: center;
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.mmb{
+    margin-left: 4%;
+}
+.flexi{
+    display: flex;
+    justify-content: center;
+}
+.brands .flexi{
+    display: flex;
+}
+.info{
+    display: flex;
+    justify-content: center;
+}
+.team{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.picture{
+    width: 48%;
+    img{
+        width: 100%;
+    }
+    text-align: center;
+}
+.imgsize{
+    display: flex;
+    flex-wrap: wrap;
+img{
+    width: 33%;
+    padding-right: 30px;
+}
+img:nth-child(3n){
+    padding-right: 0;
+}
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.left_footer{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 768px){
+    .left_footer{
+        flex-direction:row;
+    }
+.smilet{
+    display: flex;
+}
+.divdates{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dates{
+    width: 50%;
+}
+.divdates :nth-child(2n){
+    padding-right: 40px;
+}
+.picture{
+    width: 33%;
+}
+ .imgsize{
+    img{
+    width: 16%;}
+}
+
+ }
+
+ @media only screen and (min-width: 992px) {
+    .reverse{
+        flex-direction: row-reverse;
+        display: flex;
+    } 
+    .biggie{
+        display: flex;
+    }
+    .ics{
+       .icsupper, .icslower{
+            width: 50%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+.division{
+    display: flex;
+   
+    p{
+        width: 50%;
+        padding-right: 40px;
+    }
+}    
+
+}
+
