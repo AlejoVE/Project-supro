@@ -27,3 +27,13 @@ $founder:#99a6b7;
     font-family: "Roboto";
 
 }
+@mixin bold {
+    color: $black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+@mixin lightgrey {
+    color: $founder;
+    font-family: "Roboto";
+    font-weight: normal;
+}

@@ -232,6 +232,11 @@ header {
   src: url("/assets/Roboto/Roboto-Regular.ttf");
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 p {
   font-family: "Roboto";
 }
@@ -283,10 +288,15 @@ p {
   font-family: "Roboto";
 }
 
-.info {
-  margin-left: 6.5rem !important;
-}
-
 .text-align {
   margin-left: 2rem;
+}
+
+.svg {
+  font-size: 20px;
+}
+
+#ship {
+  color: red;
+  border: 3px solid red;
 }

@@ -180,6 +180,10 @@ header {
   font-family: 'Roboto';
   src: url("/assets/Roboto/Roboto-Regular.ttf"); }
 
+body {
+  padding: 0px;
+  margin: 0px; }
+
 p {
   font-family: "Roboto"; }
 
@@ -220,9 +224,6 @@ p {
   color: #99a6b7;
   font-size: large;
   font-family: "Roboto"; }
-
-.info {
-  margin-left: 6.5rem !important; }
 
 .text-align {
   margin-left: 2rem; }
