@@ -228,7 +228,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border: 1px solid blue;
   padding-top: 100px;
   padding-bottom: 20px;
   margin: auto;
@@ -252,27 +251,6 @@ a {
   color: #a59f9f;
   font-weight: lighter; }
 
-@media only screen and (max-width: 375px) {
-  .footer-list {
-    display: none; }
-  #footer {
-    width: 100%;
-    justify-content: center; }
-    #footer .footer-container {
-      width: 100%;
-      flex-wrap: wrap; }
-      #footer .footer-container h3 {
-        font-size: 25px;
-        padding: 30px; }
-        #footer .footer-container h3 #break-line {
-          display: inline; }
-    #footer #about-container {
-      text-align: center; }
-  #online-shop-container,
-  #language-container,
-  #currency-container {
-    display: none; } }
-
 @media only screen and (max-width: 768px) {
   #footer {
     width: 100%;
@@ -294,6 +272,33 @@ a {
       width: 20%; }
     #footer #language-container {
       width: 40%; } }
+
+@media only screen and (max-width: 376px) {
+  .footer-list {
+    display: none; }
+  #footer {
+    width: 100%;
+    border: 1px solid red;
+    margin: 0px;
+    justify-content: space-between;
+    padding-top: 100px; }
+    #footer .footer-container {
+      width: 50%;
+      flex-wrap: nowrap;
+      padding-top: 20px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      text-align: center; }
+      #footer .footer-container h3 {
+        padding: 0px; }
+        #footer .footer-container h3 #break-line {
+          display: inline; }
+    #footer #help-container {
+      text-align: left; }
+  #online-shop-container,
+  #language-container,
+  #currency-container {
+    display: none; } }
 
 @font-face {
   font-family: 'Roboto';
