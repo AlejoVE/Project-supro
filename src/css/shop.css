@@ -172,6 +172,129 @@ header {
   .row {
     padding: 5px 10px; } }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/assets/Roboto/Roboto-Regular.ttf"); }
+
+#footer {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 1px solid blue;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 80%;
+  justify-content: space-between; }
+  #footer .footer-container {
+    width: 20%; }
+    #footer .footer-container h3 {
+      font-weight: bolder;
+      padding-bottom: 40px; }
+      #footer .footer-container h3 #break-line {
+        display: none; }
+
+.footer-list {
+  list-style: none;
+  text-align: left; }
+  .footer-list li {
+    padding: 10px; }
+
+.text-gray-footer {
+  color: #a59f9f;
+  font-weight: lighter; }
+
+@media only screen and (max-width: 375px) {
+  .footer-list {
+    display: none; }
+  #footer {
+    width: 100%;
+    justify-content: center; }
+    #footer .footer-container {
+      width: 100%;
+      flex-wrap: wrap; }
+      #footer .footer-container h3 {
+        font-size: 25px;
+        padding: 30px; }
+        #footer .footer-container h3 #break-line {
+          display: inline; }
+    #footer #about-container {
+      text-align: center; }
+  #online-shop-container,
+  #language-container,
+  #currency-container {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  #footer {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px; }
+    #footer .footer-container {
+      width: 33%;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-top: 5px; }
+      #footer .footer-container h3 {
+        font-size: 21px; }
+        #footer .footer-container h3 #break-line {
+          display: none; }
+    #footer #help-container {
+      width: 40%; }
+    #footer #online-shop-container {
+      width: 20%; }
+    #footer #language-container {
+      width: 40%; } }
+
 @font-face {
   font-family: 'Roboto';
   src: url("/assets/Roboto/Roboto-Regular.ttf"); }
@@ -196,8 +319,6 @@ input[type='checkbox'] {
   width: 30%; }
   #sidebar h2 {
     letter-spacing: 3px; }
-  #sidebar ul {
-    list-style: circle; }
   #sidebar #filter-price {
     border: 3px solid black; }
     #sidebar #filter-price p {
@@ -224,12 +345,7 @@ input[type='checkbox'] {
       #sidebar #active-filters ul li {
         padding: 10px; }
   #sidebar #categories {
-    list-style: none;
     margin-bottom: 20px; }
-    #sidebar #categories ul {
-      text-align: left; }
-      #sidebar #categories ul li {
-        padding: 10px; }
   #sidebar hr {
     background-color: red;
     height: 5px;
@@ -290,6 +406,12 @@ input[type='checkbox'] {
         #sidebar #products-container .thumbnail-description-container ul li {
           display: inline;
           color: #f68773; }
+
+.list {
+  list-style: none;
+  text-align: left; }
+  .list li {
+    padding: 10px; }
 
 #shop {
   display: flex;
