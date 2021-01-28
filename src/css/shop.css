@@ -240,6 +240,8 @@ a {
       padding-bottom: 40px; }
       #footer .footer-container h3 #break-line {
         display: none; }
+  #footer address {
+    display: none; }
 
 .footer-list {
   list-style: none;
@@ -257,11 +259,19 @@ a {
     flex-wrap: wrap;
     justify-content: left;
     padding: 20px; }
+    #footer address {
+      display: inline;
+      padding-left: 15px;
+      width: 100%;
+      font-weight: bolder;
+      padding-top: 30px;
+      font-size: 20px; }
     #footer .footer-container {
       width: 33%;
       padding-bottom: 20px;
       padding-left: 20px;
-      padding-top: 5px; }
+      padding-top: 5px;
+      font-size: 20px; }
       #footer .footer-container h3 {
         font-size: 21px; }
         #footer .footer-container h3 #break-line {
@@ -271,7 +281,8 @@ a {
     #footer #online-shop-container {
       width: 20%; }
     #footer #language-container {
-      width: 40%; } }
+      width: 40%;
+      padding-bottom: 90px; } }
 
 @media only screen and (max-width: 376px) {
   .footer-list {
@@ -282,6 +293,8 @@ a {
     margin: 0px;
     justify-content: space-between;
     padding-top: 100px; }
+    #footer address {
+      display: none; }
     #footer .footer-container {
       width: 50%;
       flex-wrap: nowrap;
