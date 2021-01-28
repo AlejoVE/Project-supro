@@ -34,6 +34,33 @@ input[type='checkbox'] {
 		list-style: circle;
 	}
 
+	#filter-price {
+		border: 3px solid black;
+
+		p {
+			text-align: left;
+		}
+
+		.slider {
+			-webkit-appearance: none;
+			background-color: #f68773;
+			height: 10px;
+			border: none;
+			width: 88%;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				width: 0;
+				height: 0;
+			}
+		}
+	}
+
 	#active-filters {
 		margin-bottom: 25px;
 		ul {
@@ -241,6 +268,12 @@ input[type='checkbox'] {
 		text-align: left;
 		width: 100%;
 		order: 2;
+
+		// #filter-price {
+		// 	.slider {
+		// 		width: 90%;
+		// 	}
+		// }
 
 		h2 {
 			margin-bottom: 15px;

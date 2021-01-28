@@ -196,6 +196,23 @@ input[type='checkbox'] {
   width: 30%; }
   #sidebar ul {
     list-style: circle; }
+  #sidebar #filter-price {
+    border: 3px solid black; }
+    #sidebar #filter-price p {
+      text-align: left; }
+    #sidebar #filter-price .slider {
+      -webkit-appearance: none;
+      background-color: #f68773;
+      height: 10px;
+      border: none;
+      width: 88%; }
+      #sidebar #filter-price .slider:focus {
+        outline: none; }
+      #sidebar #filter-price .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 0;
+        height: 0; }
   #sidebar #active-filters {
     margin-bottom: 25px; }
     #sidebar #active-filters ul {
