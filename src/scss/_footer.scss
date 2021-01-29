@@ -72,7 +72,39 @@ $col_gray: #a59f9f;
 
 // Media queries for tablets
 
-// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+	#footer{
+		width: 100%;
+		height: 500px;
+		margin:0;
+		padding:0;
+		padding:25px;
+		justify-content: space-between;
+	}
+	.footer-container{
+		height:200px!important;
+		width: 400px;
+	}
+	
+	#language-container {
+		width: 200px!important;
+		height:300px!important;
+	}
+	
+	.line-footer-content {
+		display: flex;
+		flex-wrap:wrap;
+	}
+	.text-bottom-footer{
+		width: 100%;
+		height:200px;
+		display:flex;
+		align-items: flex-end;
+		
+	}
+
+}	
 // 	#footer {
 // 		width: 100%;
 // 		flex-wrap: wrap;

@@ -121,7 +121,7 @@
             flex-wrap: wrap!important;
 
             li:nth-child(1){
-                margin: 0 5px 0 5px!important
+                margin:!important
             }
           
         }
@@ -409,5 +409,10 @@
 
     .shop-container {
         margin:0!important;
+    }
+    
+    .latest-news-footer{
+        margin:0!important;
+        height:150px!important;
     }
 }
