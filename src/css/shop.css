@@ -47,7 +47,7 @@ a {
 
 @font-face {
   font-family: 'Roboto';
-  src: url("/assets/Roboto/Roboto-Regular.ttf"); }
+  src: url("../../assets/Roboto/Roboto-Regular.ttf"); }
 
 body {
   font-family: 'Roboto';
@@ -208,13 +208,14 @@ header {
   padding-top: 100px;
   padding-bottom: 20px;
   margin: auto;
-  width: 80%;
+  width: 70%;
+  font-size: 12px;
   justify-content: space-between; }
   #footer .footer-container {
-    width: 20%; }
+    width: auto; }
     #footer .footer-container h3 {
       font-weight: bolder;
-      padding-bottom: 40px; }
+      margin-bottom: 40px; }
       #footer .footer-container h3 #break-line {
         display: none; }
   #footer address {
@@ -224,74 +225,34 @@ header {
   list-style: none;
   text-align: left; }
   .footer-list li {
-    padding: 10px; }
+    margin: 20px 0; }
 
 .text-gray-footer {
   color: #a59f9f;
   font-weight: lighter; }
 
-@media only screen and (max-width: 768px) {
-  #footer {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 20px; }
-    #footer address {
-      display: inline;
-      padding-left: 15px;
-      width: 100%;
-      font-weight: bolder;
-      padding-top: 30px;
-      font-size: 20px; }
-    #footer .footer-container {
-      width: 33%;
-      padding-bottom: 20px;
-      padding-left: 20px;
-      padding-top: 5px;
-      font-size: 20px; }
-      #footer .footer-container h3 {
-        font-size: 21px; }
-        #footer .footer-container h3 #break-line {
-          display: none; }
-    #footer #help-container {
-      width: 40%; }
-    #footer #online-shop-container {
-      width: 20%; }
-    #footer #language-container {
-      width: 40%;
-      padding-bottom: 90px; } }
-
-@media only screen and (max-width: 376px) {
-  .footer-list {
-    display: none; }
-  #footer {
-    width: 100%;
-    border: 1px solid red;
-    margin: 0px;
+.line-footer {
+  width: 100%;
+  height: 50px; }
+  .line-footer .line-footer-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-top: 100px; }
-    #footer address {
-      display: none; }
-    #footer .footer-container {
-      width: 50%;
-      flex-wrap: nowrap;
-      padding-top: 20px;
-      padding-bottom: 0px;
-      padding-left: 0px;
-      text-align: center; }
-      #footer .footer-container h3 {
-        padding: 0px; }
-        #footer .footer-container h3 #break-line {
-          display: inline; }
-    #footer #help-container {
-      text-align: left; }
-  #online-shop-container,
-  #language-container,
-  #currency-container {
-    display: none; } }
+    margin: auto;
+    font-size: 12px; }
+    .line-footer .line-footer-content address {
+      width: 200px;
+      display: flex;
+      justify-content: space-between; }
+    .line-footer .line-footer-content .line-footer-right {
+      display: flex;
+      font-size: 12px;
+      width: 150px;
+      justify-content: space-between; }
 
 .main {
-  font-family: 'Roboto';
   display: flex;
   flex-direction: row;
   border: 1px solid red;

@@ -47,7 +47,7 @@ a {
 
 @font-face {
   font-family: 'Roboto';
-  src: url("/assets/Roboto/Roboto-Regular.ttf"); }
+  src: url("../../assets/Roboto/Roboto-Regular.ttf"); }
 
 body {
   font-family: 'Roboto';
