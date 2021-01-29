@@ -1,1 +1,64 @@
-@import "_navbar.scss"
+@import "_navbar.scss";
+@import "_var.scss";
+@import "_font.scss";
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/Roboto/Roboto-Regular.ttf');
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    font-family: "Roboto";
+}
+
+
+
+.img{
+    margin-left: 160px;
+}
+.title{
+    color:$black;
+}
+
+.text{
+    color: $text;
+}
+.subtitle{
+    @include font;
+}
+.italic{
+    @include italic;
+}
+.italics{
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+
+.name{
+font-size: 20px;
+}
+
+.normalfont{
+    @include normalfont;
+}
+.greyfontn{
+    @include founder;
+}
+
+.text-align{
+    margin-left: 2rem;
+}
+
+.svg{
+    font-size: 20px;
+}
+#ship{
+color: red;
+border: 3px solid red;
+}

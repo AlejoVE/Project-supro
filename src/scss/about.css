@@ -221,3 +221,82 @@ header {
     padding: 5px 10px;
   }
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/assets/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/assets/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.img {
+  margin-left: 160px;
+}
+
+.title {
+  color: #000;
+}
+
+.text {
+  color: #c3a698;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #000;
+}
+
+.italic {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #000;
+  font-style: italic;
+}
+
+.italics {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.normalfont {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #000;
+}
+
+.greyfontn {
+  color: #99a6b7;
+  font-size: large;
+  font-family: "Roboto";
+}
+
+.text-align {
+  margin-left: 2rem;
+}
+
+.svg {
+  font-size: 20px;
+}
+
+#ship {
+  color: red;
+  border: 3px solid red;
+}
