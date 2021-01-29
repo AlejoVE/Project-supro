@@ -71,7 +71,13 @@ font-size: 20px;
     font-weight: bolder;
     color: $black;
     font-size: 30px;
+    font-style: italic;
 }
+.cr{
+    margin-top: 3rem;
+} 
+
+
 h5{
     color: $salmon;
 }
@@ -201,6 +207,9 @@ footer{
 
  }
 
+ .reverse{
+     margin-top: 4rem;
+ }
  @media only screen and (min-width: 992px) {
     .reverse{
         flex-direction: row-reverse;

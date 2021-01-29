@@ -231,7 +231,11 @@ p {
 .ind {
   font-weight: bolder;
   color: #000;
-  font-size: 30px; }
+  font-size: 30px;
+  font-style: italic; }
+
+.cr {
+  margin-top: 3rem; }
 
 h5 {
   color: #f78773; }
@@ -360,6 +364,9 @@ footer {
     width: 33%; }
   .imgsize img {
     width: 16%; } }
+
+.reverse {
+  margin-top: 4rem; }
 
 @media only screen and (min-width: 992px) {
   .reverse {
