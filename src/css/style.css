@@ -560,14 +560,12 @@ header {
     height: auto;
     text-align: center; }
   .content-banner a {
-    color: #000 !important;
+    color: #fff !important;
+    border-bottom: 2px solid #fff !important;
+    margin-top: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    border-bottom: 2px solid #000;
-    font-size: 12px;
-    color: #fff !important;
-    border-color: #fff;
-    margin-top: 30px; }
+    font-size: 12px; }
 
 .right-banner {
   display: flex;
@@ -609,13 +607,6 @@ header {
   color: #959595;
   font-size: 12px;
   margin-top: 25px; }
-
-.p-banner {
-  color: #000 !important;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 2px solid #000;
-  font-size: 12px; }
 
 .footer-banner-1 {
   background: url("../../assets/img/imgHomePage/banner_h1_1.jpg");
@@ -1178,7 +1169,7 @@ input {
   margin-top: 20px !important; }
 
 body {
-  max-width: 1800px !important;
+  max-width: 2000px !important;
   margin: auto !important; }
 
 /*# sourceMappingURL=style.css.map */
