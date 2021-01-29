@@ -1,0 +1,138 @@
+// @import '_reset.scss';
+// @import '_font.scss';
+
+$col_gray: #a59f9f;
+
+#footer {
+	font-family: 'Roboto';
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	margin: auto;
+	width: 80%;
+	justify-content: space-between;
+
+	.footer-container {
+		width: 20%;
+
+		h3 {
+			#break-line {
+				display: none;
+			}
+			font-weight: bolder;
+			padding-bottom: 40px;
+		}
+	}
+
+	address {
+		display: none;
+	}
+}
+
+.footer-list {
+	list-style: none;
+	text-align: left;
+	li {
+		padding: 10px;
+	}
+}
+
+.text-gray-footer {
+	color: $col_gray;
+	font-weight: lighter;
+}
+
+// Media queries for tablets
+
+@media only screen and (max-width: 768px) {
+	#footer {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: left;
+		padding: 20px;
+
+		address {
+			display: inline;
+			padding-left: 15px;
+			width: 100%;
+			font-weight: bolder;
+			padding-top: 30px;
+			font-size: 20px;
+		}
+
+		.footer-container {
+			width: 33%;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			padding-top: 5px;
+			font-size: 20px;
+
+			h3 {
+				font-size: 21px;
+
+				#break-line {
+					display: none;
+				}
+			}
+		}
+
+		#help-container {
+			width: 40%;
+		}
+
+		#online-shop-container {
+			width: 20%;
+		}
+
+		#language-container {
+			width: 40%;
+			padding-bottom: 90px;
+		}
+	}
+}
+
+// Media queries for phone
+
+@media only screen and (max-width: 376px) {
+	.footer-list {
+		display: none;
+	}
+
+	#footer {
+		width: 100%;
+		border: 1px solid red;
+		margin: 0px;
+		justify-content: space-between;
+		padding-top: 100px;
+
+		address {
+			display: none;
+		}
+		.footer-container {
+			width: 50%;
+			flex-wrap: nowrap;
+			padding-top: 20px;
+			padding-bottom: 0px;
+			padding-left: 0px;
+			text-align: center;
+			h3 {
+				padding: 0px;
+				#break-line {
+					display: inline;
+				}
+			}
+		}
+
+		#help-container {
+			text-align: left;
+		}
+	}
+
+	#online-shop-container,
+	#language-container,
+	#currency-container {
+		display: none;
+	}
+}

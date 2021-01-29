@@ -1,24 +1,13 @@
+@import "_reset.scss";
+@import "_font.scss";
 @import "_navbar.scss";
-
-.banner-home {
-    background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -95px;
-    width: auto;
-    height: 700px;
-    position: relative;
-    
-}
-
-@media screen and(max-width:780px) {
-    .banner-home {
-        background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top 20px;
-        width: auto;
-        height: 600px;
-        position: relative;
-    }
-}
+@import "homepage/_mixins.scss";
+@import "homepage/_var.scss";
+@import "homepage/_sidebar.scss";
+@import "homepage/_media.scss";
+@import "homepage/_banner.scss";
+@import "homepage/_first_section.scss";
+@import "homepage/_shop_section.scss";
+@import "homepage/_banner_timer.scss";
+@import "homepage/_latest_news";
+@import "homepage/_footer_image.scss";

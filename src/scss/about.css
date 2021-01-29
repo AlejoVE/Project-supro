@@ -1,63 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("/assets/Roboto/Roboto-Regular.ttf");
-}
-
 body {
   font-family: 'Roboto';
   overflow-x: hidden;
@@ -66,6 +6,10 @@ body {
 a {
   text-decoration: none !important;
   color: #000 !important;
+}
+
+.nav-list-left {
+  width: 400px;
 }
 
 header {
@@ -101,15 +45,19 @@ header {
   width: auto;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .nav-left nav ul a {
-  margin: 0 5px;
-  padding: 5px 10px;
+  padding: 15px 15px;
+  width: 30px;
   font-size: 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.3s;
 }
 
-.nav-li-left a:hover {
+.nav-left nav ul a:hover {
+  font-size: 16px;
   border-bottom: 1px solid #000;
 }
 
@@ -154,11 +102,11 @@ header {
   height: auto;
   position: absolute;
   bottom: 4px;
-  left: 190px;
+  left: 200px;
 }
 
 .card-svg:after {
-  content: " ";
+  content: ' ';
   background-image: url("../../assets/img/imgIcons/2.svg");
   background-size: cover;
   position: relative;
@@ -171,6 +119,13 @@ header {
 
 .li-element {
   display: none;
+}
+
+@media screen and (max-width: 1460px) {
+  header {
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.425);
+  }
 }
 
 @media screen and (max-width: 1178px) {
@@ -193,6 +148,9 @@ header {
   .nav-left {
     width: 100px !important;
   }
+  .nav-ul-left {
+    margin-left: 40px !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -202,8 +160,18 @@ header {
 }
 
 @media screen and (max-width: 484px) {
+  header {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 50px !important;
+    z-index: 10;
+  }
   .nav-right {
     width: 200px !important;
+    margin-right: 10px;
   }
   .nav-right li {
     height: 30px;
@@ -306,7 +274,6 @@ p {
   color: grey;
   font-size: large;
   font-family: "Roboto";
-  text-align: justify;
 }
 
 .text-align {
@@ -343,7 +310,6 @@ h1 {
   color: grey;
   font-size: large;
   font-family: "Roboto";
-  text-align: justify;
 }
 
 .from {

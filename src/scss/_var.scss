@@ -28,5 +28,15 @@ $founder: grey;
     color:$founder;
     font-size: large;
     font-family: "Roboto";
-    text-align: justify;
+
+}
+@mixin bold {
+    color: $black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+@mixin lightgrey {
+    color: $founder;
+    font-family: "Roboto";
+    font-weight: normal;
 }
