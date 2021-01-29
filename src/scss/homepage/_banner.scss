@@ -9,6 +9,18 @@
         color: black;
 }
 
+.main-link {
+    padding:10px;
+   &:hover {
+        transform: scale(.9);
+    }
+}
+.content-middle{
+
+    .main-link{
+        margin-top: 30px!important;
+    }
+}
 .content-banner {
     height: 525px!important;
     color: #fff;
@@ -85,6 +97,7 @@
         }
     }
 }
+
 .footer-banner p {
     margin:0;
     color: $grey-color;

@@ -3,7 +3,7 @@
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 2px solid #000;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 @mixin img-banner {
@@ -49,4 +49,12 @@
     font-weight: 500;
     margin: 0;
     width: max-content;
+}
+
+@mixin hover {
+
+    opacity:0.8;
+    color: $orange;
+    border-bottom: 2px solid $orange;
+
 }
