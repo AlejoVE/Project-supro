@@ -16,42 +16,34 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 a {
   text-decoration: none;
-  color: #000;
-}
+  color: #000; }
 
 @font-face {
   font-family: 'Roboto';
@@ -59,13 +51,11 @@ a {
 
 body {
   font-family: 'Roboto';
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 a {
   text-decoration: none !important;
-  color: #000 !important;
-}
+  color: #000 !important; }
 
 .nav-list-left {
   width: 400px;
@@ -73,14 +63,9 @@ a {
 
 header {
   padding: 25px 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .nav-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -138,8 +123,6 @@ header {
 }
 
 .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,24 +188,17 @@ header {
 
 @media screen and (max-width: 1178px) {
   .search-bar {
-    display: none;
-  }
+    display: none; }
   .nav-right {
     width: 250px !important;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-right: -20px;
-  }
+    justify-content: flex-end;
+    margin-right: -20px; }
   .li-element {
     display: flex !important; }
   header {
     padding: 25px 25px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: #fff;
-  }
+    justify-content: space-between;
+    background-color: #fff; }
   .nav-left {
     width: 100px !important;
   }
@@ -233,9 +209,7 @@ header {
 
 @media screen and (max-width: 780px) {
   .nav-li-left {
-    display: none;
-  }
-}
+    display: none; } }
 
 @media screen and (max-width: 484px) {
   header {
@@ -262,9 +236,7 @@ header {
     right: 16px;
     width: 12px;
     height: 12px;
-    bottom: 35px;
-  }
-}
+    bottom: 35px; } }
 
 @media screen and (max-width: 400px) {
   .row-navbar {
