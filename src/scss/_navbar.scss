@@ -88,6 +88,15 @@ header {
 		margin: 0;
 		padding: 0;
 
+		li{
+			width:30px;
+			height:30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
 		img {
 			padding: 5px 5px;
 			margin: 0 5px;
@@ -109,12 +118,12 @@ header {
 	content: ' ';
 	background-image: url('../../assets/img/imgIcons/2.svg');
 	background-size: cover;
-	position: relative;
+	position: absolute;
 	display: inline-block;
-	right: 56px;
-	bottom: 7px;
+	right: 0px;
+	top:0;
 	width: 12px;
-	height: 12px;
+	height: 12px!important;
 }
 
 .li-element {
@@ -193,7 +202,7 @@ header {
 }
 
 @media screen and(max-width: 400px) {
-	.row {
+	.row-navbar {
 		padding: 5px 10px;
 	}
 }

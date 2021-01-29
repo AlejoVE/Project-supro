@@ -116,6 +116,13 @@ header {
     width: auto;
     margin: 0;
     padding: 0; }
+    .nav-right ul li {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
     .nav-right ul img {
       padding: 5px 5px;
       margin: 0 5px; }
@@ -133,12 +140,12 @@ header {
   content: ' ';
   background-image: url("../../assets/img/imgIcons/2.svg");
   background-size: cover;
-  position: relative;
+  position: absolute;
   display: inline-block;
-  right: 56px;
-  bottom: 7px;
+  right: 0px;
+  top: 0;
   width: 12px;
-  height: 12px; }
+  height: 12px !important; }
 
 .li-element {
   display: none; }
@@ -191,7 +198,7 @@ header {
     bottom: 35px; } }
 
 @media screen and (max-width: 400px) {
-  .row {
+  .row-navbar {
     padding: 5px 10px; } }
 
 .left-banner {
@@ -341,7 +348,6 @@ header {
     font-size: 18px !important; }
     .shop-title-2 ul {
       height: 50px !important;
-      flex-direction: column;
       flex-wrap: wrap !important; }
       .shop-title-2 ul li:nth-child(1) {
         margin: 0 5px 0 5px !important; }
@@ -449,8 +455,8 @@ header {
   .footer-banner h2 {
     margin-top: 10px; }
   .title-section {
-    margin: 0;
-    margin-left: 20px; }
+    margin: 0 !important;
+    padding-left: 20px; }
   .small-img-first {
     padding: 0 !important; }
     .small-img-first h4 {
@@ -520,7 +526,9 @@ header {
   #top-section {
     flex-direction: column !important; }
   #small-img-sm {
-    flex-direction: column !important; } }
+    flex-direction: column !important; }
+  .shop-container {
+    margin: 0 !important; } }
 
 .banner-home {
   background: url("../../assets/img/imgHomePage/sl3-1.jpg");
@@ -787,7 +795,7 @@ header {
   .title-section {
     width: 100% !important;
     margin: 0 !important;
-    margin-left: 20px !important; }
+    padding-left: 20px !important; }
   .title-section {
     align-items: center; }
   .row-title {
@@ -836,7 +844,7 @@ header {
     right: 0;
     align-items: center;
     justify-content: flex-end;
-    width: 450px; }
+    width: max-content !important; }
     .shop-container .shop-title-2 a {
       color: #959595;
       font-size: 12px;
@@ -1166,8 +1174,8 @@ input {
     width: 150px !important; } }
 
 .images-footer {
-  height: 200px !important;
+  height: auto !important;
   width: 100% !important;
-  padding: 0 !important; }
+  margin-top: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */

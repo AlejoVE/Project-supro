@@ -30,7 +30,7 @@
         right: 0;
         align-items: center;
         justify-content: flex-end;
-        width: 450px;
+        width: $max!important;
 
         a {
             @include p-grey;
