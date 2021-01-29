@@ -507,3 +507,19 @@ footer {
     padding-right: 40px;
   }
 }
+
+.wkhd {
+  padding-right: 40px;
+}
+
+.icslower {
+  flex-direction: column;
+}
+
+.icsupper {
+  flex-direction: column;
+}
+
+.darkh {
+  padding-left: 7px;
+}

@@ -602,4 +602,26 @@ footer {
     padding-right: 40px;
   }
 }
+
+.wkhd {
+  padding-right: 40px;
+}
+
+.icslower {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icsupper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.darkh {
+  padding-left: 7px;
+}
 /*# sourceMappingURL=about.css.map */
