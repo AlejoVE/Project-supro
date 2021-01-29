@@ -118,7 +118,6 @@
         
         ul{
             height:50px!important;
-            flex-direction: column;
             flex-wrap: wrap!important;
 
             li:nth-child(1){
@@ -293,8 +292,8 @@
     }
 
     .title-section {
-        margin: 0;
-        margin-left: 20px;
+        margin: 0!important;
+        padding-left: 20px;
     }
 
     .small-img-first {
@@ -406,5 +405,9 @@
     }
     #small-img-sm{
         flex-direction: column!important;
+    }
+
+    .shop-container {
+        margin:0!important;
     }
 }
