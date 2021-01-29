@@ -1,4 +1,4 @@
-@import '_reset.scss';
+@import 'reset.scss';
 @import 'font.scss';
 @import '_navbar.scss';
 @import '_footer.scss';
@@ -274,6 +274,94 @@ input[type='checkbox'] {
 		flex-direction: column;
 		width: 100%;
 		padding-top: 50px;
+	}
+
+	#checkboxes,
+	#filter-price,
+	#categories,
+	#active-filters,
+	#shop-list,
+	#shop-title {
+		font-size: 18px;
+		padding-bottom: 40px;
+		padding-bottom: 20px;
+	}
+
+	#active-filters {
+		ul {
+			padding-left: 25px;
+		}
+	}
+
+	#shop-header {
+		flex-direction: column;
+		padding-bottom: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			margin-left: 5px;
+			margin-right: 5px;
+			li {
+				margin-left: 0px;
+			}
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		#hidden-li {
+			visibility: visible;
+		}
+
+		#shop-title {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+
+	#shop-list {
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+
+	#sidebar {
+		text-align: left;
+		width: 100%;
+		order: 2;
+		padding-left: 10px;
+
+		h2 {
+			margin-bottom: 15px;
+			font-size: 25px;
+		}
+	}
+
+	#shop {
+		order: 1;
+		padding-left: 0px;
+	}
+
+	.image-container {
+		width: 50%;
+	}
+
+	#products-container {
+		.thumbnail-description-container {
+			h3 {
+				font-size: 15px;
+				font-weight: bolder;
+			}
+
+			.gray-text {
+				font-size: 20px;
+			}
+		}
 	}
 }
 
