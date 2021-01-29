@@ -11,3 +11,8 @@
 @import "homepage/_banner_timer.scss";
 @import "homepage/_latest_news";
 @import "homepage/_footer_image.scss";
+
+body {
+    max-width: 1800px!important;
+    margin:auto!important;
+}
