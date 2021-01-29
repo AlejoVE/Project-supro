@@ -1,3 +1,6 @@
+// @import '_reset.scss';
+// @import '_font.scss';
+
 $col_gray: #a59f9f;
 
 #footer {
@@ -94,7 +97,7 @@ $col_gray: #a59f9f;
 
 @media only screen and (max-width: 376px) {
 	.footer-list {
-		display: none;
+		display: inline;
 	}
 
 	#footer {

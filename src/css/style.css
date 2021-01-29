@@ -90,7 +90,7 @@ header {
         width: 30px;
         font-size: 13px;
         border-bottom: 1px solid rgba(255, 255, 255, 0);
-        transition: .3s; }
+        transition: 0.3s; }
         .nav-left nav ul a:hover {
           font-size: 16px;
           border-bottom: 1px solid #000; }
@@ -130,7 +130,7 @@ header {
   left: 200px; }
 
 .card-svg:after {
-  content: " ";
+  content: ' ';
   background-image: url("../../assets/img/imgIcons/2.svg");
   background-size: cover;
   position: relative;
