@@ -136,19 +136,18 @@ header {
   bottom: 4px;
   left: 200px; }
 
-.card-svg:after {
+#card-svg:after {
   content: ' ';
   background-image: url("../../assets/img/imgIcons/2.svg");
   background-size: cover;
   position: absolute;
-  display: inline-block;
   right: 0px;
   top: 0;
   width: 12px;
   height: 12px !important; }
 
 .li-element {
-  display: none; }
+  display: none !important; }
 
 @media screen and (max-width: 1460px) {
   header {
@@ -163,7 +162,7 @@ header {
     justify-content: flex-end;
     margin-right: -20px; }
   .li-element {
-    display: block; }
+    display: flex !important; }
   header {
     padding: 25px 25px;
     justify-content: space-between;

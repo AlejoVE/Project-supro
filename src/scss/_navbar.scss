@@ -95,6 +95,7 @@ header {
 			justify-content: center;
 			align-items: center;
 			position: relative;
+		
 		}
 
 		img {
@@ -114,12 +115,11 @@ header {
 	left: 200px;
 }
 
-.card-svg:after {
+#card-svg:after {
 	content: ' ';
 	background-image: url('../../assets/img/imgIcons/2.svg');
 	background-size: cover;
 	position: absolute;
-	display: inline-block;
 	right: 0px;
 	top:0;
 	width: 12px;
@@ -127,7 +127,7 @@ header {
 }
 
 .li-element {
-	display: none;
+	display: none!important;
 }
 
 @media screen and (max-width: 1460px) {
@@ -152,7 +152,7 @@ header {
 	}
 
 	.li-element {
-		display: block;
+		display: flex!important;
 	}
 
 	header {
