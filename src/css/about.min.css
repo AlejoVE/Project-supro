@@ -222,4 +222,11 @@ p {
 .text-align {
   margin-left: 2rem; }
 
+.svg {
+  font-size: 20px; }
+
+#ship {
+  color: red;
+  border: 3px solid red; }
+
 /*# sourceMappingURL=about.min.css.map */
