@@ -23,9 +23,8 @@ header {
 	align-items: center;
 	width: 580px !important;
 
-	.logo-header  {
+	.logo-header {
 		width: 100px;
-
 
 		img {
 			width: 70px;
@@ -51,12 +50,11 @@ header {
 				width: 30px;
 				font-size: 13px;
 				border-bottom: 1px solid rgba(255, 255, 255, 0);
-				transition: all .2s ease-in-out;
+				transition: 0.3s;
 
 				&:hover {
-					font-size:16px;
-					border-bottom: 1px solid rgb(0, 0, 0);
-
+					font-size: 16px;
+					border-bottom: 1px solid #000;
 				}
 			}
 		}
@@ -96,17 +94,14 @@ header {
 			justify-content: center;
 			align-items: center;
 			position: relative;
-			transition: all .3 ease-in-out!important;
-			&:hover{
-				transform: scale(1.1);
-			}
+		
+		}
+
+		img {
+			padding: 5px 5px;
+			margin: 0 5px;
 		}
 	}
-
-	img {
-		padding: 5px 5px;
-		margin: 0 5px;
-	}	
 }
 
 .search-bar:after {
@@ -137,7 +132,7 @@ header {
 @media screen and (max-width: 1460px) {
 	header {
 		justify-content: space-between;
-		background-color: rgba(255, 255, 255, 0.425);
+		background-color: rgba(255, 255, 255, 0.425)!important;
 
 		// input{
 		//     border: 1px solid $grey-color!important;
