@@ -67,6 +67,11 @@
 }
 
 @media screen and(max-width:580px) {
+
+    .container-ul-footer{
+        width: 50%!important;
+        padding:0!important;
+    }
     .content-footer{
         width: 100%!important;
         h4{
@@ -77,15 +82,31 @@
     .content-line{
         flex-direction: column!important;
         width: 100%!important;
-        justify-content: center!important;
-        align-items: flex-start!important;
+        justify-content: space-around!important;
         padding-left: 20px!important;
 
         .line-right{
-            padding-left:13px!important;
+            width: 100%!important;
+            display:flex;
+            justify-content: flex-start!important;
+
+            p{
+                margin: 0 10px;
+            }
         }
     }
     .container-ul-footer:nth-child(5){
         display:none!important;
+    }
+    .line-footer{
+        height:100px!important;
+    }
+
+    .line-left{
+        width: 100%!important;
+
+        p{
+            margin: 0 10px;
+        }
     }
 }
