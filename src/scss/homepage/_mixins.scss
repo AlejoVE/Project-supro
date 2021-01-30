@@ -44,11 +44,10 @@
 }
 
 @mixin p-grey {
-    color: $grey-color;
+    color: #959595!important;
     font-size: 12px;
     font-weight: 500;
     margin: 0;
-    width: max-content;
 }
 
 @mixin hover {
@@ -56,5 +55,13 @@
     opacity:0.8;
     color: $orange;
     border-bottom: 2px solid $orange;
-
 }
+
+@mixin p-black {
+    color: #000!important;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'roboto';
+}
+

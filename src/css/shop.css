@@ -180,6 +180,8 @@ header {
     display: none; } }
 
 @media screen and (max-width: 484px) {
+  .container-fluid {
+    padding: 0 !important; }
   header {
     width: 100% !important;
     display: flex !important;
@@ -187,7 +189,7 @@ header {
     padding: 0 !important;
     margin: 0 !important;
     height: 50px !important;
-    z-index: 10; }
+    z-index: 10 !important; }
   .nav-right {
     width: 200px !important;
     margin-right: 10px; }
@@ -230,11 +232,10 @@ header {
         .container-footer .content-footer .container-ul-footer .footer-list li {
           line-height: 180%; }
           .container-footer .content-footer .container-ul-footer .footer-list li a {
-            color: #959595;
+            color: #959595 !important;
             font-size: 12px;
             font-weight: 500;
             margin: 0;
-            width: max-content;
             color: #959595 !important;
             font-weight: 500; }
 
@@ -242,11 +243,10 @@ header {
   border-top: 1px solid #95959573;
   height: 70px; }
   .line-footer .grey-text {
-    color: #959595;
+    color: #959595 !important;
     font-size: 12px;
     font-weight: 500;
     margin: 0;
-    width: max-content;
     font-weight: 500; }
   .line-footer .supro {
     color: #000;
@@ -264,6 +264,9 @@ header {
       justify-content: space-between; }
 
 @media screen and (max-width: 580px) {
+  .container-ul-footer {
+    width: 50% !important;
+    padding: 0 !important; }
   .content-footer {
     width: 100% !important; }
     .content-footer h4 {
@@ -271,13 +274,22 @@ header {
   .content-line {
     flex-direction: column !important;
     width: 100% !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
+    justify-content: space-around !important;
     padding-left: 20px !important; }
     .content-line .line-right {
-      padding-left: 13px !important; }
+      width: 100% !important;
+      display: flex;
+      justify-content: flex-start !important; }
+      .content-line .line-right p {
+        margin: 0 10px; }
   .container-ul-footer:nth-child(5) {
-    display: none !important; } }
+    display: none !important; }
+  .line-footer {
+    height: 100px !important; }
+  .line-left {
+    width: 100%; }
+    .line-left p {
+      margin: 0 10px; } }
 
 .main {
   display: flex;
