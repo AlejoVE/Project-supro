@@ -3,6 +3,8 @@
     display: flex;
     align-items: flex-end;
     width: 100%!important;
+    max-width: 1800px!important;
+    margin:auto!important;
 
     .row-title{
         display: flex;
@@ -29,6 +31,7 @@
     width: 100%;
     height:$max;
     margin: 50px 0 50px 0!important;
+
 }
 .first-section {
     width: 70%!important;
