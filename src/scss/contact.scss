@@ -1,0 +1,11 @@
+@import "_reset.scss";
+@import "_font.scss";
+@import "homepage/_var.scss";
+@import "_navbar.scss";
+@import "homepage/_mixins.scss";
+@import "contactPage/_banner_contact.scss";
+@import "contactPage/_contact_form.scss";
+
+header {
+    border-bottom: 1px solid rgba(173, 173, 173, 0.377);
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/contact.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://kit.fontawesome.com/c4bca5b848.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <section class="banner-home container-fluid">
+        <header class="row row-navbar">
+            <div class="nav-left col-6">
+                <div class="logo-header">
+                    <a href="#"><img src="assets/img/imgHomePage/logo_supro.svg" class="img-logo" alt="logo"></a>
+                </div>
+                <nav class="nav-list-left ">
+                    <ul class="nav-ul-left">
+                        <li class="nav-li-left">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Collection</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="nav-li-left">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav-right col-6">
+                <div class="search-bar">
+                    <input type="text" class="search-bar" placeholder="Search Searching ..." maxlength="20"
+                        style="color:#959595;">
+                </div>
+                <nav class="nav-list-right">
+                    <ul class="nav-ul-right">
+                        <li class="nav-li-right li-element">
+                            <a href="#"><img src="assets/img/imgIcons/loupe.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right">
+                            <a href="#"><img src="assets/img/imgIcons/user.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right">
+                            <a href="#"><img src="assets/img/imgIcons/heart.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right " id="card-svg">
+                            <a href="#"><img src="assets/img/imgIcons/shopping-cart.png" alt="icon"></a>
+                        </li>
+                        <li class="nav-li-right ">
+                            <a href="#"><img src="assets/img/imgIcons/menu.png" alt="icon"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <main>
+        <!-- BANNER CONTACT -->
+        <div class="container-fluid banner-contact">
+            <div class="title-contact">
+                <h1>Contact</h1>
+                <div class="subtitle-contact">
+                    <a href ="index.html" class="link-home p-grey">Home</a>
+                    <span class="dot-subtitle p-grey">•</span>
+                    <a href="contact.html" class="link-contact p-black">Contact</a>
+                </div>
+            </div>
+        </div>
+        <!-- FORM SECTION -->
+
+        <section class="container-fluid contact-form">
+            <div class="first-section">
+                <form method="post" action="#" class="content-form">
+                    <div class="form-top">
+                        <div class="form-label">
+                            <label for="name" class="p-black">Name<span class="orange-star"> *</span></label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-label">
+                            <label for="email" class="p-black">Email<span class="orange-star"> *</span></label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+
+                    <div class="form-bottom">
+                        <div class="form-label" >
+                            <label for="message" class="p-black">Your Message<span class="orange-star"> *</span></label>
+                            <textarea name="message" id="message" ></textarea>
+                        </div>
+                        <input type="submit" value="SEND MESSAGE" id="submit">
+                    </div>
+                </form>
+                <div class="coord-right">
+                    <ul class="social-network">
+                        <li class="li-social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="li-social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="li-social"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="li-social"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="li-social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <address class="address-place">
+                        <h3 class="h3-black">Our Office</h3>
+                        <p class="p-grey">15 St Margarets Lane New York, NY</p>
+                        <p class="p-grey">10033</p>
+                    </address>
+                    <address class="address-coord">
+                        <h3 class="h3-black">Get in Touch</h3>
+                        <p class="p-black fw-bold">PHONE NUMBER</p>
+                        <a href="tel:+16316796357" class="p-grey">631-679-6357</a>
+                        <p class="p-black fw-bold mt-3">EMAIL</p>
+                        <a href="mailto:supro@example.com" class="p-grey">supro@example.com</a>
+                    </address>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

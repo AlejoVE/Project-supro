@@ -124,3 +124,12 @@ a {
     margin-right: 5px!important;
     
 }
+
+@media screen and(max-width:585px) {
+
+    #btn{
+        width: 100px!important;
+        height: 25px;
+        align-items: center;
+    }
+}
