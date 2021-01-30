@@ -461,6 +461,72 @@ input[type='checkbox'] {
   color: #a59f9f;
   font-weight: lighter; }
 
+@media only screen and (max-width: 769px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px; }
+  #sidebar {
+    text-align: left;
+    width: 50%;
+    order: 2;
+    margin-left: 30px;
+    font-size: 20px; }
+    #sidebar h2 {
+      margin-bottom: 15px;
+      font-size: 25px; }
+    #sidebar #active-filters ul {
+      margin-left: 20px; }
+    #sidebar #active-filters,
+    #sidebar #categories,
+    #sidebar #filter-price,
+    #sidebar #checkboxes {
+      padding-bottom: 20px; }
+    #sidebar #products-container {
+      padding-bottom: 150px; }
+      #sidebar #products-container .thumbnail-container h3 {
+        font-size: 20px; }
+      #sidebar #products-container .thumbnail-container p {
+        font-size: 17px; }
+      #sidebar #products-container .thumbnail-container img {
+        width: 28%; }
+  #shop {
+    order: 1;
+    padding-left: 0px;
+    font-size: 17px; }
+    #shop #shop-header {
+      flex-direction: column;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 20px; }
+      #shop #shop-header ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px; }
+        #shop #shop-header ul li {
+          margin-left: 0px; }
+      #shop #shop-header .hidden {
+        display: none; }
+      #shop #shop-header #hidden-li {
+        visibility: visible; }
+      #shop #shop-header #shop-title {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px; }
+      #shop #shop-header #shop-list #sort-by {
+        display: inline;
+        margin-left: 250px; }
+      #shop #shop-header #shop-list #default {
+        display: inline; }
+    #shop #shop-body .image-container {
+      padding-bottom: 15px; }
+    #shop #shop-body h3 {
+      font-size: 16px; } }
+
 @media only screen and (max-width: 376px) {
   .main {
     flex-direction: column;
