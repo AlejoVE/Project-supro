@@ -287,7 +287,7 @@ header {
   .line-footer {
     height: 100px !important; }
   .line-left {
-    width: 100%; }
+    width: 100% !important; }
     .line-left p {
       margin: 0 10px; } }
 

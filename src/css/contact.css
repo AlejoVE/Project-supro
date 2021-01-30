@@ -189,7 +189,7 @@ header {
     padding: 0 !important;
     margin: 0 !important;
     height: 50px !important;
-    z-index: 10; }
+    z-index: 10 !important; }
   .nav-right {
     width: 200px !important;
     margin-right: 10px; }

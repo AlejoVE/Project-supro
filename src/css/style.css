@@ -1715,15 +1715,15 @@ input {
     width: 150px !important; } }
 
 .images-footer {
-<<<<<<< HEAD
-  height: 150px !important;
-=======
-  height: 100% !important;
->>>>>>> 6b40af567f061c5d14c6babe6b1179fd11ea4b20
+  height: 180px !important;
   width: 100% !important;
-  margin-top: 20px !important;
-  background: url("../../../assets/img/imgHomePage/banner-footer.png") no-repeat;
-  background-size: cover; }
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.row-images-footer {
+  height: auto !important;
+  width: auto !important;
+  margin-top: 20px !important; }
 
 .container-footer {
   height: 270px;
@@ -1805,13 +1805,9 @@ input {
   .container-ul-footer:nth-child(5) {
     display: none !important; }
   .line-footer {
-<<<<<<< HEAD
     height: 100px !important; }
-=======
-    height: 80px !important; }
->>>>>>> 6b40af567f061c5d14c6babe6b1179fd11ea4b20
   .line-left {
-    width: 100%; }
+    width: 100% !important; }
     .line-left p {
       margin: 0 10px; } }
 
