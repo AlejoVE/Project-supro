@@ -3,6 +3,8 @@
     display: flex;
     align-items: flex-end;
     width: 100%!important;
+    max-width: 1800px!important;
+    margin:auto!important;
 
     .row-title{
         display: flex;
@@ -29,6 +31,7 @@
     width: 100%;
     height:$max;
     margin: 50px 0 50px 0!important;
+
 }
 .first-section {
     width: 70%!important;
@@ -112,7 +115,7 @@
     {
         width:100%!important;
         margin:0!important;
-        margin-left:20px!important;
+        padding-left:20px!important;
     }
 
     .title-section{
@@ -139,16 +142,84 @@
     .big-img-first{
         position:static!important;
         margin-bottom: 70px !important;
+        display:flex!important;
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
+        img{
+            width:250px!important;
+            height: auto!important;
+        }
 
         .text-big-img{
             position:static!important;
+            width: 250px!important;
+        }
+
+        #txt-big,
+        .big-img-first .text-big-img{
+            display:flex!important;
+            flex-direction: column!important;
+            align-items: flex-end!important;
+            justify-content: center!important;
         }
         
     }
     #row-first-section{
         .small-img-first{
             margin-top:0!important;
+            align-items: center!important;
+            width:100%!important;
+            display:flex!important;
+            flex-direction: column!important;
+            justify-content: flex-start!important;
+            img {
+                width:250px!important;
+                height:auto!important;
+            }
         }
+        
+        #row-first-section .small-img-first p{
+            width: 70px!important;
+            margin:0!important;
+            text-align:center!important;
+        }
+    }
+
+    #first-section .small-img-first .text-small-img {
+        display:flex!important;
+        align-items: flex-end!important;
+        justify-content: center!important;
+        h4{
+            width: 250px!important;
+            margin-top:5px!important;
+        }
+    }
+    
+
+    .text-small-img{
+        display:flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: flex-start!important;
+    }
+    #top-section .small-img-first{
+        width: 100%!important;
+        height: 100%!important;
+        
+        .text-small-img{
+            width:250px!important;
+
+            h4{
+                width:250px!important;
+            }
+        }
+    }
+    #small-img-sm{
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
 
     }
 }

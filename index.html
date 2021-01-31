@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,11 @@
     <script src="https://kit.fontawesome.com/c4bca5b848.js" crossorigin="anonymous"></script>
     <title>Supro.</title>
 </head>
+
 <body>
     <section class="banner-home container-fluid">
         <!-- NAVBAR -->
-        <header class="row">
+        <header class="row row-navbar">
             <div class="nav-left col-6">
                 <div class="logo-header">
                     <a href="#"><img src="assets/img/imgHomePage/logo_supro.svg" class="img-logo" alt="logo"></a>
@@ -21,10 +23,10 @@
                 <nav class="nav-list-left ">
                     <ul class="nav-ul-left">
                         <li class="nav-li-left">
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="nav-li-left">
-                            <a href="#">Shop</a>
+                            <a href="shop.html">Shop</a>
                         </li>
                         <li class="nav-li-left">
                             <a href="#">Collection</a>
@@ -44,7 +46,8 @@
 
             <div class="nav-right col-6">
                 <div class="search-bar">
-                    <input type="text" class="search-bar" placeholder="Search Searching ..." maxlength="20" style="color:#959595;">
+                    <input type="text" class="search-bar" placeholder="Search Searching ..." maxlength="20"
+                        style="color:#959595;">
                 </div>
                 <nav class="nav-list-right">
                     <ul class="nav-ul-right">
@@ -57,10 +60,10 @@
                         <li class="nav-li-right">
                             <a href="#"><img src="assets/img/imgIcons/heart.png" alt="icon"></a>
                         </li>
-                        <li class="nav-li-right">
+                        <li class="nav-li-right " id="card-svg">
                             <a href="#"><img src="assets/img/imgIcons/shopping-cart.png" alt="icon"></a>
                         </li>
-                        <li class="nav-li-right card-svg">
+                        <li class="nav-li-right ">
                             <a href="#"><img src="assets/img/imgIcons/menu.png" alt="icon"></a>
                         </li>
                     </ul>
@@ -84,12 +87,12 @@
                     <li class="circle-li"><i class="fas fa-circle"></i></li>
                 </ul>
             </nav>
-        
+
 
             <div class="col-6 content-middle ">
                 <div class="content-banner">
                     <h1>Winter Collection</h1>
-                    <p class="p-banner main-link"><a href="#">Discover More</a></p>
+                    <p class="main-link"><a href="#">Discover More</a></p>
                     <div class="line-banner"></div>
                 </div>
             </div>
@@ -128,14 +131,18 @@
                 <div id="banner-text-left">
                     <p>Jaccquard Print</p>
                     <h2>Hairband Collection</h2>
-                    <a href="#"><p class="p-banner main-link">Discover More</p></a>
+                    <a href="#">
+                        <p class="p-banner main-link">Discover More</p>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 footer-banner-2">
                 <div id="banner-text-middle">
                     <p>Jaccquard Print</p>
                     <h2>Hairband Collection</h2>
-                    <a href="#"><p class="p-banner main-link">Discover More</p></a>
+                    <a href="#">
+                        <p class="p-banner main-link">Discover More</p>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 footer-banner-3">
@@ -143,7 +150,9 @@
                 <div id="banner-text-right">
                     <p>Special Price</p>
                     <h2>Corduroy Culottes</h2>
-                    <a href="#"><p class="p-banner main-link">Discover More</p></a>
+                    <a href="#">
+                        <p class="p-banner main-link">Discover More</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -153,7 +162,7 @@
 
     <section class="container-fluid title-section">
         <div class="row row-title">
-            <h2>Top sellers</h2>
+            <h2><a href="#">Top sellers</a></h2>
             <p>Browse the huge variety of our products</p>
         </div>
     </section>
@@ -170,7 +179,7 @@
             </div>
             <div class="col-sm-12 big-img-first">
                 <img src="assets/img/imgHomePage/bsl2.jpg " alt="img">
-                <div class="text-big-img">
+                <div class="text-big-img" id="txt-big">
                     <h4>Flower Design Blouse</h4>
                     <p>$89.90</p>
                     <p class="p-banner main-link"><a href="#">Shop Now</a></p>
@@ -178,7 +187,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="first-section container-fluid" id="first-section">
         <div class="row row-first-section" id="row-first-section">
             <div class=" col-sm-12 big-img-first">
@@ -203,11 +212,11 @@
     <!-- Shop Section -->
     <section class="container shop-container">
         <div class="row shop-title">
-            <div class="col shop-title-1">
-                <h2><a href="#">New Arrival</a</h2>
+            <div class="shop-title-1">
+                <h2><a href="#">New Arrival</a></h2>
                 <p>Browse the huge variety of our products</p>
             </div>
-            <div class="col shop-title-2">
+            <div class="shop-title-2">
                 <ul class="shop-ul">
                     <li class="shop-li"><a href="#" class="active">All Products</a></li>
                     <li class="shop-li"><a href="#">Clothing</a></li>
@@ -221,7 +230,7 @@
         <div class="row shop-row-1">
             <div class="col-lg-4 col-6-md image-container">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_05_1_2.jpg"  alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_05_1_2.jpg" alt="sunglasses" />
                     <a href=#>Contrast Backpack</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -235,7 +244,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-2">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_08_1_6.jpg"  alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_08_1_6.jpg" alt="sunglasses" />
                     <a href=#>Contrasting Design T-Shirt</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -249,7 +258,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-3">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_07_1_2.jpg"  alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_07_1_2.jpg" alt="sunglasses" />
                     <a href=#>Contrasting Design T-Shirt 2</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -264,7 +273,7 @@
 
             <div class="col-lg-4 col-6-md  image-container">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_09_1_1_5.jpg"  alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_09_1_1_5.jpg" alt="sunglasses" />
                     <a href=#>Cotton Sweater</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -278,7 +287,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-2">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_04_1_1.jpg"  alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_04_1_1.jpg" alt="sunglasses" />
                     <a href=#>Black Boots</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -292,7 +301,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-3">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/bsl3.jpg"  alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/bsl3.jpg" alt="sunglasses" />
                     <a href=#>Glitter Decorated Shoes</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -338,7 +347,7 @@
                     <p>Seconds</p>
                 </div>
             </div>
-            <p class="shop-link"><a href="#" >Shop Now</a></p>
+            <p class="shop-link"><a href="#">Shop Now</a></p>
         </div>
     </section>
     <!-- LATEST NEWS -->
@@ -350,31 +359,31 @@
                 <p>Our recent articles about fashion ideas & products</p>
             </div>
             <div class=" col title-right">
-                <a href="#" class="main-link">SEE ALL NEWS</a>
+                <a href="#" class="main-link" id="link-news">SEE ALL NEWS</a>
             </div>
         </div>
 
         <div class="row latest-news-image">
             <div class="latest-news-article" id="news-article-1">
-               <img src="assets/img/imgHomePage/blog1.jpg" class="img-fluid" alt="img">
-               <p>Five things you only know if you were at Chanel's Hamburg Show</p>
-               <p><span class="diy">DIY </span>June 10, 2019</p>
-               <a href="#">READ MORE</a>
+                <img src="assets/img/imgHomePage/blog1.jpg" class="img-fluid" alt="img">
+                <p>Five things you only know if you were at Chanel's Hamburg Show</p>
+                <p><span class="diy">DIY </span>June 10, 2019</p>
+                <a href="#">READ MORE</a>
             </div>
 
             <div class="latest-news-article">
-               <img src="assets/img/imgHomePage/blog2.jpg" class="img-fluid" alt="img">
-               <p>Kering Reinforces Luxury Status By Distributing Puma Shares</p>
-               <p><span class="diy">DIY </span>June 10, 2019</p>
-               <a href="#">READ MORE</a>
+                <img src="assets/img/imgHomePage/blog2.jpg" class="img-fluid" alt="img">
+                <p>Kering Reinforces Luxury Status By Distributing Puma Shares</p>
+                <p><span class="diy">DIY </span>June 10, 2019</p>
+                <a href="#">READ MORE</a>
             </div>
 
             <div class="latest-news-article">
-               <img src="assets/img/imgHomePage/blog3.jpg" class="img-fluid"  alt="img">
-               <p>These Glittery Sneakers will make you want to ditch your holiday heels</p>
-               <p><span class="diy">DIY </span>June 10, 2019</p>
-               <a href="#">READ MORE</a>
-            </div>    
+                <img src="assets/img/imgHomePage/blog3.jpg" class="img-fluid" alt="img">
+                <p>These Glittery Sneakers will make you want to ditch your holiday heels</p>
+                <p><span class="diy">DIY </span>June 10, 2019</p>
+                <a href="#">READ MORE</a>
+            </div>
         </div>
 
         <div class="row latest-news-footer">
@@ -384,7 +393,7 @@
             </div>
             <div class=" col-7 footer-right">
                 <div class="input-mail">
-                    <input type="email" id="email"  placeholder="Email Address" style="color:#bbbbbb; font-size:12px;">
+                    <input type="email" id="email" placeholder="Email Address" style="color:#bbbbbb; font-size:12px;">
                     <input class="button" type="submit" value="SUBSCRIBE">
                 </div>
             </div>
@@ -394,10 +403,69 @@
     <!-- FOOTER IMAGE -->
 
     <div class="container-fluid images-footer">
-        <div class="row">
+        <div class="row row-images-footer">
             <img src="assets/img/imgHomePage/banner-footer.png" class="img-fluid p-0" alt="#">
         </div>
-    </div> 
+    </div>
+
+
     <!-- FOOTER -->
+
+    <footer class="container-fluid container-footer">
+        <div class="content-footer">
+            <div class="container-ul-footer">
+                <h4>HELP & INFORMATION</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Delivery & Returns</a></li>
+                    <li><a href="#">Premier Delivery</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>ABOUT SUPRO</h4>
+                <ul class="footer-list">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>ONLINE SHOP</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Belts</a></li>
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>LANGUAGE</h4>
+                <ul class="footer-list">
+                    <li><a href="#">English ▼</a></li>
+
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>CURRENCY</h4>
+                <ul class="footer-list">
+                    <li><a href="#">USD ▼</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="line-footer">
+            <div class="content-line">
+                <div class="line-left">
+                    <p class="grey-text">© <span class="supro">Supro. </span> All rights reserverd 2021</p>
+                </div>
+                <div class="line-right">
+                    <p class="grey-text">Privacy Policy</p>
+                    <p class="grey-text">Term of use</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

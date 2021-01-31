@@ -1,12 +1,13 @@
 .banner-home {
     background: url("../../assets/img/imgHomePage/sl3-1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center bottom 0;
-        width: auto;
-        height: 700px;
-        position: relative;
-        color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 0;
+    width: auto;
+    height: 700px;
+    position: relative;
+    color: black;
+
 }
 
 .main-link {
@@ -38,10 +39,12 @@
     }
 
     a {
-        @include text-underline;
         color:#fff!important;
-        border-color: #fff;
+        border-bottom: 2px solid #fff!important;
         margin-top: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
     }
 }
 
@@ -104,13 +107,13 @@
     font-size: 12px;
     margin-top: 25px;
 }
-.p-banner {
-    @include text-underline;
-}
+
 .footer-banner-1 {
     background: url("../../assets/img/imgHomePage/banner_h1_1.jpg");
     @include img-banner;
     @include display-img-banner;
+    max-width: 1800px!important;
+    margin:auto!important;
 }
 
 .footer-banner-2 {
@@ -118,6 +121,8 @@
     @include img-banner;
     @include display-img-banner;
     align-items: center;
+    max-width: 1800px!important;
+    margin:auto!important;
 }
 
 .footer-banner-3 {
@@ -125,6 +130,8 @@
     @include img-banner;
     @include display-img-banner;
     align-items: flex-end;
+    max-width: 1800px!important;
+    margin:auto!important;
 }
 
 #banner-text-left {

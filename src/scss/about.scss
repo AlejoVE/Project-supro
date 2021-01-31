@@ -1,123 +1,146 @@
-@import "_navbar.scss";
+@import "_reset.scss";
+@import "aboutPage/_navbar.scss";
 @import "_var.scss";
 @import "_font.scss";
+
 @font-face {
     font-family: 'Roboto';
     src: url('/assets/Roboto/Roboto-Regular.ttf');
 }
-html{
+
+html {
     overflow-x: hidden;
 }
 
-body{
+body {
     padding: 0 1rem;
 }
-p{
+
+p {
     font-family: "Roboto";
 }
 
-.about{
+.about {
     margin-left: 2rem;
     margin-top: 2rem;
 }
-.smilet{
+
+.smilet {
     margin-top: 4rem;
-}
-.supro{
-    margin-top: 2rem;
-}
-.supro h4 h2{
-    margin-top: 2rem;
-}
-.supro text{
-    margin-top: 4rem;
-}
-.img{
-    margin-left: 160px;
-}
-.title{
-    color:$black;
 }
 
-.subtitle{
+.supro {
+    margin-top: 2rem;
+}
+
+.supro h4 h2 {
+    margin-top: 2rem;
+}
+
+.supro text {
+    margin-top: 4rem;
+}
+
+.img {
+    margin-left: 160px;
+}
+
+.title {
+    color: $black;
+}
+
+.subtitle {
     @include font;
 }
-.italic{
+
+.italic {
     @include italic;
 }
 
 
-.name{
-font-size: 20px;
+.name {
+    font-size: 20px;
 }
 
-.normalfont{
+.normalfont {
     @include normalfont;
     font-size: 30px;
     text-align: justify;
 }
-.greyfontn{
+
+.greyfontn {
     @include founder;
 }
 
-.text-align{
+.text-align {
     margin-left: 2rem;
 }
 
-.image{
+.image {
     display: flex;
 }
-.ind{
+
+.ind {
     font-weight: bolder;
     color: $black;
     font-size: 30px;
     font-style: italic;
 }
-.cr{
+
+.cr {
     margin-top: 3rem;
-} 
+}
 
 
-h5{
+h5 {
     color: $salmon;
 }
-h1{
-    color: $salmon;  
+
+h1 {
+    color: $salmon;
 }
-.luxury{
+
+.luxury {
     @include font;
 }
 
-.text{
+.text {
     @include founder;
 }
-.from{
+
+.from {
     margin-top: 2rem;
 }
-.big{
+
+.big {
     margin-top: 6rem;
 }
-.bs{
+
+.bs {
     @include font;
 }
-.bt p{
+
+.bt p {
     color: grey;
 }
 
-.dates .dts{
+.dates .dts {
     @include font;
     margin-top: 2rem;
 }
 
-.ics{
+.ics {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-.icons{
+
+.icons {
     display: flex;
 }
-.icsupper,.icslower {
+
+.icsupper,
+.icslower {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -125,129 +148,157 @@ h1{
     height: 40vh;
 }
 
-.icons p{
+.icons p {
     font-weight: bold;
 }
-.leadership{
+
+.leadership {
     justify-content: center;
     display: flex;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
-.mmb{
+
+.mmb {
     margin-left: 4%;
 }
-.flexi{
+
+.flexi {
     display: flex;
     justify-content: center;
 }
-.brands .flexi{
+
+.brands .flexi {
     display: flex;
 }
-.info{
+
+.info {
     display: flex;
     justify-content: center;
 }
-.team{
+
+.team {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.picture{
+
+.picture {
     width: 48%;
-    img{
+
+    img {
         width: 100%;
     }
+
     text-align: center;
 }
-.imgsize{
+
+.imgsize {
     display: flex;
     flex-wrap: wrap;
-img{
-    width: 33%;
-    padding-right: 30px;
+
+    img {
+        width: 33%;
+        padding-right: 30px;
+    }
+
+    img:nth-child(3n) {
+        padding-right: 0;
+    }
 }
-img:nth-child(3n){
-    padding-right: 0;
-}
-}
-footer{
-    display:flex;
+
+footer {
+    display: flex;
     justify-content: space-between;
 }
 
-.left_footer{
+.left_footer {
     display: flex;
     flex-direction: column;
 }
-@media screen and (min-width: 768px){
-    .left_footer{
-        flex-direction:row;
+
+@media screen and (min-width: 768px) {
+    .left_footer {
+        flex-direction: row;
     }
-.smilet{
-    display: flex;
-}
-.divdates{
-    display: flex;
-    flex-wrap: wrap;
-}
-.dates{
-    width: 50%;
-}
-.divdates :nth-child(2n){
-    padding-right: 40px;
-}
-.picture{
-    width: 33%;
-}
- .imgsize{
-    img{
-    width: 16%;}
-}
+
+    .smilet {
+        display: flex;
+    }
+
+    .divdates {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dates {
+        width: 50%;
+    }
+
+    .divdates :nth-child(2n) {
+        padding-right: 40px;
+    }
+
+    .picture {
+        width: 33%;
+    }
+
+    .imgsize {
+        img {
+            width: 16%;
+        }
+    }
 
 }
 
- .reverse{
-     margin-top: 4rem;
- }
- @media only screen and (min-width: 992px) {
-    .reverse{
+.reverse {
+    margin-top: 4rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .reverse {
         flex-direction: row-reverse;
         display: flex;
-    } 
-    .biggie{
+    }
+
+    .biggie {
         display: flex;
     }
-    .ics{
-       .icsupper, .icslower{
+
+    .ics {
+
+        .icsupper,
+        .icslower {
             width: 50%;
             flex-direction: row;
             justify-content: space-around;
         }
     }
 
-.division{
-    display: flex;
-   
-    p{
-        width: 50%;
-        padding-right: 40px;
+    .division {
+        display: flex;
+
+        p {
+            width: 50%;
+            padding-right: 40px;
+        }
     }
-}    
 
 }
 
-.wkhd{
+.wkhd {
     padding-right: 40px;
 }
 
-.icslower{
-flex-direction: column;
-}
-.icsupper{
+.icslower {
     flex-direction: column;
-    }
+}
 
- .darkh{
-        padding-left: 7px;
-    }
+.icsupper {
+    flex-direction: column;
+}
+
+.darkh {
+    padding-left: 7px;
+
+}

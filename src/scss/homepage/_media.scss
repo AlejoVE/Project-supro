@@ -2,7 +2,7 @@
 
 @media screen and (max-width:990px) {
 
-
+    
 
     .text-small-img{
         bottom:0!important;
@@ -118,12 +118,9 @@
         
         ul{
             height:50px!important;
-            flex-direction: column;
             flex-wrap: wrap!important;
 
-            li:nth-child(1){
-                margin: 0 5px 0 5px!important
-            }
+
           
         }
     }
@@ -293,8 +290,8 @@
     }
 
     .title-section {
-        margin: 0;
-        margin-left: 20px;
+        margin: 0!important;
+        padding-left: 20px;
     }
 
     .small-img-first {
@@ -406,5 +403,14 @@
     }
     #small-img-sm{
         flex-direction: column!important;
+    }
+
+    .shop-container {
+        margin:0!important;
+    }
+    
+    .latest-news-footer{
+        margin:0!important;
+        height:150px!important;
     }
 }
