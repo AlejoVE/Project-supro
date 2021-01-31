@@ -225,6 +225,10 @@ header {
   .row-navbar {
     padding: 5px 10px; } }
 
+.container-fluid {
+  max-width: 1800px;
+  height: auto; }
+
 .p-grey {
   color: #959595 !important;
   font-size: 12px;

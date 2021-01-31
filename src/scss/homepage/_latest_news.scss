@@ -152,6 +152,12 @@ input{
     top: 4px;
     width: 12px;
     height: 12px;
+    
+}
+@media screen and(max-width:780px) {
+    #email{
+        width:150px!important;
+    }
 
 }
 
@@ -166,7 +172,8 @@ input{
         display :flex;
         flex-direction: column;
 
-    .img-fluid{
+    .img-fluid,
+    #news-article-1 img{
         width:320px!important;
         height:auto!important;
     }
@@ -208,11 +215,5 @@ input{
     .footer-right{
         margin:auto!important;
         width: 80%!important;
-    }
-}
-
-@media screen and(max-width:780px) {
-    #email{
-        width:150px!important;
     }
 }
