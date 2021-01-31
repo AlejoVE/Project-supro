@@ -1,17 +1,20 @@
-@import "_reset.scss";
-@import "font.scss";
-@import "_navbar.scss";
+@import '_reset.scss';
+@import '_font.scss';
+@import 'homepage/_var.scss';
+@import 'homepage/_mixins.scss';
+@import '_navbar.scss';
 @import '_footer.scss';
 
 @mixin color($color) {
 	color: $color;
 }
+
 .main {
 	display: flex;
 	flex-direction: row;
-	border: 1px solid red;
 	margin: auto;
 	width: 80%;
+	padding-top: 100px;
 }
 
 input[type='checkbox'] {
@@ -24,7 +27,7 @@ input[type='checkbox'] {
 }
 
 #sidebar {
-	text-align: center;
+	text-align: left;
 	width: 30%;
 
 	h2 {
@@ -32,8 +35,6 @@ input[type='checkbox'] {
 	}
 
 	#filter-price {
-		border: 3px solid black;
-
 		p {
 			text-align: left;
 		}
@@ -42,7 +43,6 @@ input[type='checkbox'] {
 			-webkit-appearance: none;
 			background-color: #f68773;
 			height: 10px;
-			border: none;
 			width: 88%;
 
 			&:focus {
@@ -92,7 +92,6 @@ input[type='checkbox'] {
 		ul {
 			display: flex;
 			flex-direction: column;
-			border: 2px solid pink;
 			list-style: square;
 
 			li {
@@ -125,7 +124,8 @@ input[type='checkbox'] {
 	}
 
 	#products-container {
-		border: 2px solid blue;
+		padding-top: 20px;
+		padding-bottom: 40px;
 
 		.thumbnail-container {
 			display: flex;
@@ -177,8 +177,8 @@ input[type='checkbox'] {
 #shop {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid blue;
 	width: 100%;
+	padding-left: 20px;
 
 	h2 {
 		text-align: center;
@@ -191,8 +191,8 @@ input[type='checkbox'] {
 #shop-header {
 	display: flex;
 	flex-direction: row;
-	border: 3px solid yellow;
 	justify-content: space-between;
+	padding-bottom: 45px;
 
 	ul {
 		list-style: none;
@@ -211,8 +211,6 @@ input[type='checkbox'] {
 }
 
 #shop-title {
-	border: 1px solid black;
-
 	h1 {
 		font-size: 50px;
 		font-weight: bolder;
@@ -224,7 +222,6 @@ input[type='checkbox'] {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid red;
 }
 
 #shop-body {
@@ -274,17 +271,125 @@ input[type='checkbox'] {
 	font-weight: lighter;
 }
 
-// Media queries for phone
-
-@media only screen and (max-width: 767px) {
+// Media queries for tablets
+@media only screen and (max-width: 769px) {
 	.main {
 		flex-direction: column;
+		width: 100%;
+		padding-top: 50px;
+		margin: auto;
 	}
 
 	#sidebar {
+		text-align: left;
+		width: 50%;
+		order: 2;
+		margin-left: 30px;
+		font-size: 20px;
+
 		h2 {
+			margin-bottom: 15px;
 			font-size: 25px;
 		}
+
+		#active-filters {
+			ul {
+				margin-left: 20px;
+			}
+		}
+
+		#active-filters,
+		#categories,
+		#filter-price,
+		#checkboxes {
+			padding-bottom: 20px;
+		}
+
+		#products-container {
+			padding-bottom: 150px;
+			.thumbnail-container {
+				h3 {
+					font-size: 20px;
+				}
+
+				p {
+					font-size: 17px;
+				}
+				img {
+					width: 28%;
+				}
+			}
+		}
+	}
+
+	#shop {
+		order: 1;
+		padding-left: 0px;
+		font-size: 17px;
+
+		#shop-header {
+			flex-direction: column;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 20px;
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 100%;
+				margin-left: 5px;
+				margin-right: 5px;
+				li {
+					margin-left: 0px;
+				}
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			#hidden-li {
+				visibility: visible;
+			}
+
+			#shop-title {
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-bottom: 20px;
+			}
+
+			#shop-list {
+				#sort-by {
+					display: inline;
+					margin-left: 180px;
+				}
+
+				#default {
+					display: inline;
+				}
+			}
+		}
+
+		#shop-body {
+			.image-container {
+				padding-bottom: 15px;
+			}
+
+			h3 {
+				font-size: 16px;
+			}
+		}
+	}
+}
+// Media queries for phone
+
+@media only screen and (max-width: 377px) {
+	.main {
+		flex-direction: column;
+		width: 100%;
+		padding-top: 50px;
 	}
 
 	#checkboxes,
@@ -294,60 +399,92 @@ input[type='checkbox'] {
 	#shop-list,
 	#shop-title {
 		font-size: 18px;
-	}
-
-	#shop-header {
-		flex-direction: column;
-
-		ul {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			width: 100%;
-			margin-left: 5px;
-			margin-right: 5px;
-			li {
-				margin-left: 0px;
-			}
-		}
-
-		.hidden {
-			display: none;
-		}
-
-		#hidden-li {
-			visibility: visible;
-		}
-
-		#shop-title {
-			margin-left: 5px;
-			margin-right: 5px;
-		}
-	}
-
-	#shop-list {
-		justify-content: space-between;
-		margin-top: 10px;
+		padding-bottom: 40px;
+		padding-bottom: 20px;
 	}
 
 	#sidebar {
 		text-align: left;
 		width: 100%;
 		order: 2;
+		margin-left: 10px;
+		padding-right: 5px;
 
-		// #filter-price {
-		// 	.slider {
-		// 		width: 90%;
-		// 	}
-		// }
+		#active-filters {
+			ul {
+				padding-left: opx;
+			}
+		}
 
 		h2 {
 			margin-bottom: 15px;
+			font-size: 20px;
+		}
+
+		#filter-price {
+			.slider {
+				width: 80%;
+			}
+		}
+
+		#products-container {
+			.thumbnail-description-container {
+				h3 {
+					font-size: 17px;
+					font-weight: bolder;
+				}
+
+				.gray-text {
+					font-size: 15px;
+				}
+			}
 		}
 	}
 
 	#shop {
 		order: 1;
+		padding-left: 0px;
+		#shop-header {
+			flex-direction: column;
+			padding-bottom: 0px;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			#shop-list {
+				justify-content: space-between;
+				margin-top: 10px;
+
+				#sort-by,
+				#default {
+					display: none;
+				}
+			}
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 100%;
+				margin-left: 5px;
+				margin-right: 5px;
+				li {
+					margin-left: 0px;
+				}
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			#hidden-li {
+				visibility: visible;
+			}
+
+			#shop-title {
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+		}
 	}
 
 	.image-container {
@@ -356,40 +493,13 @@ input[type='checkbox'] {
 
 	#products-container {
 		.thumbnail-description-container {
-			border: 3px solid black;
 			h3 {
-				font-size: 15px;
+				font-size: 100px;
 				font-weight: bolder;
 			}
 
 			.gray-text {
-				font-size: 20px;
-			}
-		}
-	}
-
-	#small-navbar {
-		margin-left: 0px;
-		ul {
-			#filter {
-				display: none;
-			}
-		}
-	}
-}
-
-// Media queries for desktop
-
-@media only screen and (min-width: 768px) {
-	#products-container {
-		.thumbnail-description-container {
-			h3 {
-				font-size: 15px;
-				display: inline-block;
-				width: 115px;
-				white-space: nowrap;
-				overflow: hidden !important;
-				text-overflow: ellipsis;
+				font-size: 10px;
 			}
 		}
 	}

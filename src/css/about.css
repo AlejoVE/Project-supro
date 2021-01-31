@@ -1,3 +1,50 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
 body {
   font-family: 'Roboto';
   overflow-x: hidden;
@@ -23,117 +70,68 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 580px !important;
-}
-
-.nav-left .logo-header {
-  width: 100px;
-}
-
-.nav-left .logo-header img {
-  width: 70px;
-  height: auto;
-}
-
-.nav-left nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 400px;
-}
-
-.nav-left nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.nav-left nav ul a {
-  padding: 15px 15px;
-  width: 30px;
-  font-size: 13px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.nav-left nav ul a:hover {
-  font-size: 16px;
-  border-bottom: 1px solid #000;
-}
+  justify-content: space-between;
+  align-items: center;
+  width: 580px !important; }
+  .nav-left .logo-header {
+    width: 100px; }
+    .nav-left .logo-header img {
+      width: 70px;
+      height: auto; }
+  .nav-left nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px; }
+    .nav-left nav ul {
+      display: flex;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      position: relative; }
+      .nav-left nav ul a {
+        padding: 15px 15px;
+        width: 30px;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        transition: 0.3s; }
+        .nav-left nav ul a:hover {
+          font-size: 16px;
+          border-bottom: 1px solid #000; }
 
 .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 480px !important;
-}
-
-.nav-right :focus {
-  outline: none;
-}
-
-.nav-right .search-bar {
-  border-radius: 50px;
-  border: none;
-  height: 30px;
-  width: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 12px;
-  position: relative;
-}
-
-.nav-right ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-right ul li {
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.nav-right ul img {
-  padding: 5px 5px;
-  margin: 0 5px;
-}
+  justify-content: space-between;
+  align-items: center;
+  width: 480px !important; }
+  .nav-right :focus {
+    outline: none; }
+  .nav-right .search-bar {
+    border-radius: 50px;
+    border: none;
+    height: 30px;
+    width: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    position: relative; }
+  .nav-right ul {
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding: 0; }
+    .nav-right ul li {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+    .nav-right ul img {
+      padding: 5px 5px;
+      margin: 0 5px; }
 
 .search-bar:after {
   display: block;
@@ -153,21 +151,15 @@ header {
   right: 0px;
   top: 0;
   width: 12px;
-  height: 12px !important;
-}
+  height: 12px !important; }
 
 .li-element {
-  display: none !important;
-}
+  display: none !important; }
 
 @media screen and (max-width: 1460px) {
   header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.425);
-  }
-}
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.425) !important; } }
 
 @media screen and (max-width: 1178px) {
   .search-bar {
@@ -181,10 +173,7 @@ header {
     margin-right: -20px;
   }
   .li-element {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
+    display: flex !important; }
   header {
     padding: 25px 25px;
     -webkit-box-pack: justify;
@@ -222,11 +211,9 @@ header {
   }
   .nav-right {
     width: 200px !important;
-    margin-right: 10px;
-  }
-  .nav-right li {
-    height: 30px;
-  }
+    margin-right: 10px; }
+    .nav-right li {
+      height: 30px; }
   .card-svg:after {
     right: 16px;
     width: 12px;
@@ -237,14 +224,11 @@ header {
 
 @media screen and (max-width: 400px) {
   .row-navbar {
-    padding: 5px 10px;
-  }
-}
+    padding: 5px 10px; } }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../../assets/Roboto/Roboto-Regular.ttf");
-}
+  src: url("../../assets/Roboto/Roboto-Regular.ttf"); }
 
 @font-face {
   font-family: 'Roboto';
@@ -328,8 +312,7 @@ p {
 }
 
 .text-align {
-  margin-left: 2rem;
-}
+  margin-left: 2rem; }
 
 .image {
   display: -webkit-box;
@@ -418,7 +401,8 @@ h1 {
   display: flex;
 }
 
-.icsupper, .icslower {
+.icsupper,
+.icslower {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,29 +470,20 @@ h1 {
 
 .picture {
   width: 48%;
-  text-align: center;
-}
-
-.picture img {
-  width: 100%;
-}
+  text-align: center; }
+  .picture img {
+    width: 100%; }
 
 .imgsize {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.imgsize img {
-  width: 33%;
-  padding-right: 30px;
-}
-
-.imgsize img:nth-child(3n) {
-  padding-right: 0;
-}
+  flex-wrap: wrap; }
+  .imgsize img {
+    width: 33%;
+    padding-right: 30px; }
+  .imgsize img:nth-child(3n) {
+    padding-right: 0; }
 
 footer {
   display: -webkit-box;
@@ -577,11 +552,9 @@ footer {
     display: flex;
   }
   .biggie {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .ics .icsupper, .ics .icslower {
+    display: flex; }
+  .ics .icsupper,
+  .ics .icslower {
     width: 50%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -591,15 +564,10 @@ footer {
         justify-content: space-around;
   }
   .division {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .division p {
-    width: 50%;
-    padding-right: 40px;
-  }
-}
+    display: flex; }
+    .division p {
+      width: 50%;
+      padding-right: 40px; } }
 
 .wkhd {
   padding-right: 40px;
@@ -620,6 +588,6 @@ footer {
 }
 
 .darkh {
-  padding-left: 7px;
-}
+  padding-left: 7px; }
+
 /*# sourceMappingURL=about.css.map */
