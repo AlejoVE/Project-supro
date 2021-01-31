@@ -486,14 +486,8 @@ h1 {
   padding-right: 0;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left_footer {
-  display: flex;
-  flex-direction: column;
+.pict {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {

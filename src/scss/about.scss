@@ -1,12 +1,10 @@
 @import "_reset.scss";
-@import "aboutPage/_navbar.scss";
+@import "_navbar.scss";
 @import "_var.scss";
 @import "_font.scss";
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('/assets/Roboto/Roboto-Regular.ttf');
-}
+@import 'homepage/_var.scss';
+@import 'homepage/_mixins.scss';
+@import "_footer.scss";
 
 html {
     overflow-x: hidden;
@@ -206,15 +204,8 @@ h1 {
         padding-right: 0;
     }
 }
-
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.left_footer {
-    display: flex;
-    flex-direction: column;
+.pict{
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -300,5 +291,4 @@ footer {
 
 .darkh {
     padding-left: 7px;
-
 }
