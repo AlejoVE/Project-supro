@@ -55,12 +55,8 @@ a {
 
 @font-face {
   font-family: 'Roboto';
-<<<<<<< HEAD
-  src: url("../../assets/Roboto/Roboto-Regular.ttf"); }
-=======
-  src: url("/assets/Roboto/Roboto-Regular.ttf");
+  src: url("../../assets/Roboto/Roboto-Regular.ttf");
 }
->>>>>>> Samantha/flex
 
 body {
   font-family: 'Roboto';
@@ -146,37 +142,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-between;
-  align-items: center;
-  width: 480px !important; }
-  .nav-right :focus {
-    outline: none; }
-  .nav-right .search-bar {
-    border-radius: 50px;
-    border: none;
-    height: 30px;
-    width: 200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 12px;
-    position: relative; }
-  .nav-right ul {
-    display: flex;
-    width: auto;
-    margin: 0;
-    padding: 0; }
-    .nav-right ul li {
-      width: 30px;
-      height: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative; }
-    .nav-right ul img {
-      padding: 5px 5px;
-      margin: 0 5px; }
-=======
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -210,11 +175,25 @@ header {
   padding: 0;
 }
 
+.nav-right ul li {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
 .nav-right ul img {
   padding: 5px 5px;
   margin: 0 5px;
 }
->>>>>>> Samantha/flex
 
 .search-bar:after {
   display: block;
@@ -234,19 +213,12 @@ header {
   right: 0px;
   top: 0;
   width: 12px;
-<<<<<<< HEAD
-  height: 12px !important; }
-
-.li-element {
-  display: none !important; }
-=======
-  height: 12px;
+  height: 12px !important;
 }
 
 .li-element {
-  display: none;
+  display: none !important;
 }
->>>>>>> Samantha/flex
 
 @media screen and (max-width: 1460px) {
   header {
@@ -269,12 +241,10 @@ header {
     margin-right: -20px;
   }
   .li-element {
-<<<<<<< HEAD
-    display: flex !important; }
-=======
-    display: block;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
->>>>>>> Samantha/flex
   header {
     padding: 25px 25px;
     -webkit-box-pack: justify;
@@ -326,15 +296,10 @@ header {
 }
 
 @media screen and (max-width: 400px) {
-<<<<<<< HEAD
   .row-navbar {
-    padding: 5px 10px; } }
-=======
-  .row {
     padding: 5px 10px;
   }
 }
->>>>>>> Samantha/flex
 
 #footer {
   font-family: 'Roboto';
@@ -350,39 +315,20 @@ header {
   padding-top: 100px;
   padding-bottom: 20px;
   margin: auto;
-<<<<<<< HEAD
   width: 70%;
   font-size: 12px;
-  justify-content: space-between; }
-  #footer .footer-container {
-    width: auto; }
-    #footer .footer-container h3 {
-      font-weight: bolder;
-      margin-bottom: 40px; }
-      #footer .footer-container h3 #break-line {
-        display: none; }
-  #footer address {
-    display: none; }
-
-.footer-list {
-  list-style: none;
-  text-align: left; }
-  .footer-list li {
-    margin: 20px 0; }
-=======
-  width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 #footer .footer-container {
-  width: 20%;
+  width: auto;
 }
 
 #footer .footer-container h3 {
   font-weight: bolder;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #footer .footer-container h3 #break-line {
@@ -399,128 +345,59 @@ header {
 }
 
 .footer-list li {
-  padding: 10px;
+  margin: 20px 0;
 }
->>>>>>> Samantha/flex
 
 .text-gray-footer {
   color: #a59f9f;
   font-weight: lighter;
 }
 
-<<<<<<< HEAD
 .line-footer {
   width: 100%;
-  height: 50px; }
-  .line-footer .line-footer-content {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    font-size: 12px; }
-    .line-footer .line-footer-content address {
-      width: 200px;
-      display: flex;
-      justify-content: space-between; }
-    .line-footer .line-footer-content .line-footer-right {
-      display: flex;
-      font-size: 12px;
-      width: 150px;
-      justify-content: space-between; }
-
-.main {
-=======
-@media only screen and (max-width: 768px) {
-  #footer {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding: 20px;
-  }
-  #footer address {
-    display: inline;
-    padding-left: 15px;
-    width: 100%;
-    font-weight: bolder;
-    padding-top: 30px;
-    font-size: 20px;
-  }
-  #footer .footer-container {
-    width: 33%;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 5px;
-    font-size: 20px;
-  }
-  #footer .footer-container h3 {
-    font-size: 21px;
-  }
-  #footer .footer-container h3 #break-line {
-    display: none;
-  }
-  #footer #help-container {
-    width: 40%;
-  }
-  #footer #online-shop-container {
-    width: 20%;
-  }
-  #footer #language-container {
-    width: 40%;
-    padding-bottom: 90px;
-  }
+  height: 50px;
 }
 
-@media only screen and (max-width: 376px) {
-  .footer-list {
-    display: none;
-  }
-  #footer {
-    width: 100%;
-    border: 1px solid red;
-    margin: 0px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 100px;
-  }
-  #footer address {
-    display: none;
-  }
-  #footer .footer-container {
-    width: 50%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    text-align: center;
-  }
-  #footer .footer-container h3 {
-    padding: 0px;
-  }
-  #footer .footer-container h3 #break-line {
-    display: inline;
-  }
-  #footer #help-container {
-    text-align: left;
-  }
-  #online-shop-container,
-  #language-container,
-  #currency-container {
-    display: none;
-  }
-}
-
-.main {
-  font-family: 'Roboto';
+.line-footer .line-footer-content {
+  width: 70%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> Samantha/flex
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  font-size: 12px;
+}
+
+.line-footer .line-footer-content address {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.line-footer .line-footer-content .line-footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
