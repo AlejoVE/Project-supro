@@ -20,21 +20,21 @@
                 <nav class="nav-list-left ">
                     <ul class="nav-ul-left">
                         <li class="nav-li-left">
-                            <a href="index.html">Home</a>
+                            <a href="index.html" id="link-nav">Home</a>
                         </li>
                         <li class="nav-li-left">
-                            <a href="shop.html">Shop</a>
+                            <a href="shop.html" id="link-nav">Shop</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="#">Collection</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="#">Pages</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="#">Blog</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -87,18 +87,18 @@
                 <form method="post" action="#" class="content-form">
                     <div class="form-top">
                         <div class="form-label">
-                            <label for="name" class="p-black">Name<span class="orange-star"> *</span></label>
+                            <label for="name" class="p-black fw-bold">Name<span class="orange-star"> *</span></label>
                             <input type="text" name="name" id="name">
                         </div>
                         <div class="form-label">
-                            <label for="email" class="p-black">Email<span class="orange-star"> *</span></label>
+                            <label for="email" class="p-black fw-bold">Email<span class="orange-star"> *</span></label>
                             <input type="email" name="email" id="email">
                         </div>
                     </div>
 
                     <div class="form-bottom">
                         <div class="form-label" >
-                            <label for="message" class="p-black">Your Message<span class="orange-star"> *</span></label>
+                            <label for="message" class="p-black fw-bold">Your Message<span class="orange-star"> *</span></label>
                             <textarea name="message" id="message" ></textarea>
                         </div>
                         <input type="submit" value="SEND MESSAGE" id="submit">
@@ -113,20 +113,145 @@
                         <li class="li-social"><a href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <address class="address-place">
-                        <h3 class="h3-black">Our Office</h3>
+                        <h3 class="h3-black fw-bold">Our Office</h3>
                         <p class="p-grey">15 St Margarets Lane New York, NY</p>
                         <p class="p-grey">10033</p>
                     </address>
                     <address class="address-coord">
-                        <h3 class="h3-black">Get in Touch</h3>
+                        <h3 class="h3-black fw-bold">Get in Touch</h3>
                         <p class="p-black fw-bold">PHONE NUMBER</p>
                         <a href="tel:+16316796357" class="p-grey">631-679-6357</a>
-                        <p class="p-black fw-bold mt-3">EMAIL</p>
+                        <p class="p-black mt-3 fw-bold">EMAIL</p>
                         <a href="mailto:supro@example.com" class="p-grey">supro@example.com</a>
                     </address>
                 </div>
             </div>
         </section>
+
+        <!-- Address Section -->
+
+        <section class="container-fluid address-section">
+            <div class="container-address">
+                <address class="content-address">
+                    <div class="location">
+                        <h3 class="h3-black fw-bold">Store in London</h3>
+                        <div class="location-address">
+                            <p class="p-black fw-bold">LOCATION</p>
+                            <p class="p-grey">16 lolaire Road, New Abbey, DG2 2SX</p>
+                        </div>
+                    </div>
+                    <div class="coord-sm">
+                        <div class="phone-number">
+                            <p class="p-black fw-bold">PHONE NUMBER</p>
+                            <a href="tel:+16316796357" class="p-grey">631-679-6357</a>
+                        </div>
+                        <div class="address-mail">
+                            <p class="p-black fw-bold">EMAIL</p>
+                            <a href="mailto:suprolondon@example.com" class="p-grey">suprolondon@example.com</a>
+                        </div>
+                    </div>
+                </address>
+
+                <address class="content-address">
+                    <div class="location">
+                        <h3 class="h3-black fw-bold">Store in Paris</h3>
+                        <div class="location-address">
+                            <p class="p-black fw-bold">LOCATION</p>
+                            <p class="p-grey">16 lolaire Road, New Abbey, DG2 2SX</p>
+                        </div>
+                    </div>
+                    <div class="coord-sm">
+                        <div class="phone-number">
+                            <p class="p-black fw-bold">PHONE NUMBER</p>
+                            <a href="tel:+16316796357" class="p-grey">631-679-6357</a>
+                        </div>
+                        <div class="address-mail">
+                            <p class="p-black fw-bold">EMAIL</p>
+                            <a href="mailto:suproparis@example.com" class="p-grey">suproparis@example.com</a>
+                        </div>
+                    </div>
+                </address>
+
+                <address class="content-address">
+                    <div class="location">
+                        <h3 class="h3-black fw-bold">Store in Dubaï</h3>
+                        <div class="location-address">
+                            <p class="p-black fw-bold">LOCATION</p>
+                            <p class="p-grey">16 lolaire Road, New Abbey, DG2 2SX</p>
+                        </div>
+                    </div>
+                    <div class="coord-sm">
+                        <div class="phone-number">
+                            <p class="p-black fw-bold">PHONE NUMBER</p>
+                            <a href="tel:+16316796357" class="p-grey">631-679-6357</a>
+                        </div>
+                        <div class="address-mail">
+                            <p class="p-black fw-bold">EMAIL</p>
+                            <a href="mailto:suprodubai@example.com" class="p-grey">suprodubai@example.com</a>
+                        </div>
+                    </div>
+                </address>
+            </div>
+        </section>
+
+        <section class="container-fluid container-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491215.26596471!2d-73.93459619941063!3d40.71785328796164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20%C3%89tat%20de%20New%20York%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sbe!4v1612110324645!5m2!1sfr!2sbe" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
     </main>
+    <footer class="container-fluid container-footer">
+        <div class="content-footer">
+            <div class="container-ul-footer">
+                <h4>HELP & INFORMATION</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Delivery & Returns</a></li>
+                    <li><a href="#">Premier Delivery</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>ABOUT SUPRO</h4>
+                <ul class="footer-list">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>ONLINE SHOP</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Belts</a></li>
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>LANGUAGE</h4>
+                <ul class="footer-list">
+                    <li><a href="#">English ▼</a></li>
+
+                </ul>
+            </div>
+            <div class="container-ul-footer">
+                <h4>CURRENCY</h4>
+                <ul class="footer-list">
+                    <li><a href="#">USD ▼</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=" container-fluid line-footer">
+            <div class="content-line">
+                <div class="line-left">
+                    <p class="grey-text">© <span class="supro">Supro. </span> All rights reserverd 2021</p>
+                </div>
+                <div class="line-right">
+                    <p class="grey-text">Privacy Policy</p>
+                    <p class="grey-text">Term of use</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

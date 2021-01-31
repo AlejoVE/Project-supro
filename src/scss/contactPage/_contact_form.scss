@@ -1,11 +1,14 @@
 .h3-black{
     font-size:$h3;
 }
-
-
-
+.fab{
+    transition: color .3s!important;
+}
+a:hover .fab{
+    color:#f6877386!important;
+}
 .contact-form{
-    height:600px;
+    height:auto;
     width: 100%;
     margin-top: 50px;
     .first-section{
@@ -54,11 +57,12 @@
                     background-color: #000;
                     color:#fff;
                     border: 1px solid #000;
+                    transition: all .3s ease-in-out;
                     &:hover{
                         background-color: rgba(255, 255, 255, 0.548);
-                        color: #000;
-                        border: 1px solid rgb(0, 0, 0);
-                        box-shadow: 0 0 5px rgba(70, 70, 70, 0.664);
+                        color: #f6877394;
+                        border: 1px solid#f6877394;;
+                        box-shadow: 0 0 5px rgba(160, 160, 160, 0.664);
                     }
                 }
                 #message{
@@ -85,7 +89,8 @@
             display :flex;
             justify-content: space-between;
             padding:0;
-            width: 100%;
+            width: 85%;
+            
             li
             {
                 width: 30px;
@@ -95,6 +100,7 @@
                 justify-content: center;
                 border: 1px solid rgba(173, 173, 173, 0.377);
                 border-radius: 50%;
+                margin: 0 2px!important;
                 a{
                     width:30px!important;
                     height:30px!important;
@@ -112,3 +118,50 @@
     }
 }
 
+@media screen and(max-width:780px) {
+    .first-section {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0 20px;
+        flex-direction: column;
+        .content-form {
+            width: 100% !important;
+        }
+    }
+    .coord-right {
+        padding: 0!important;
+        width: 100% !important;
+        margin-top: 30px;
+        ul {
+            width: 200px!important;
+            margin: 0 2px!important;
+        }
+        .address-place {
+            margin-top: 30px;
+        }
+        .address-coord {
+            margin-top: 30px;
+        }
+    }
+}
+
+
+@media screen and(max-width:585px) {
+    label{
+        margin-bottom:10px!important;
+    }
+    .form-top{
+        flex-direction: column;
+        
+        .form-label{
+            width:100%!important;
+            margin-bottom:20px;
+        }
+    }
+    .coord-right{
+        padding:0!important;
+        ul{
+            width:60%!important;
+        }
+    }
+}    
