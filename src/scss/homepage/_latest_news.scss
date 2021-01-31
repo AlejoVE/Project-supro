@@ -201,7 +201,14 @@ input{
         width: $max!important;
 
     }
-
+    .footer-left{
+        width:80%!important;
+        margin:auto!important;
+    }
+    .footer-right{
+        margin:auto!important;
+        width: 80%!important;
+    }
 }
 
 @media screen and(max-width:780px) {
