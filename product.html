@@ -149,7 +149,7 @@
 					</div>
 				</div>
 				<!-- Product description and cart -->
-				<div id="product-description">
+				<div id="product-description-container">
 					<ul>
 						<li><i class="bi bi-star-fill yellow-start"></i></li>
 						<li><i class="bi bi-star-fill yellow-start"></i></li>
@@ -168,31 +168,40 @@
 						voluptates.
 					</p>
 				</div>
-				<div id="cart">
+				<div id="cart-container">
 					<div id="quantity-container" class="border">
 						<button class="bi bi-dash button"></button>
 						<input type="number" id="number-input" value="1" />
 						<button class="bi bi-plus button"></button>
 					</div>
-					<button id="add-to-car-button">Add to cart</button>
-					<button><i class="bi bi-heart" id="heart-button"></i></button
-					><br />
-					<button id="buy-now-button">BUY NOW</button>
-					<div>
-						<p>CATEGORY: Women, Top, Accessories, Jewellery</p>
-						<p>TAGS: clothing, t-shirt, woman</p>
-						<i class="bi bi-twitter"></i>
+					<div class="border-bottom">
+						<button id="add-to-car-button">ADD TO CART</button>
+						<button id="heart-button" class="border">
+							<i class="bi bi-heart"></i></button
+						><br />
+						<button id="buy-now-button" class="border-bottom">
+							BUY NOW
+						</button>
+					</div>
+					<div id="category-tags-container">
+						<p class="p-gray">
+							<span>CATEGORY:</span> Women, Top, Accessories, Jewellery
+						</p>
+						<p class="p-gray">
+							<span>TAGS:</span> clothing, t-shirt, woman
+						</p>
 						<i class="bi bi-facebook"></i>
+						<i class="bi bi-twitter"></i>
 						<i class="fab fa-pinterest"></i>
 					</div>
 				</div>
 			</section>
 			<!-- Small header -->
-			<div>
+			<div class="border-top border-bottom" id="small-header">
 				<ul>
-					<li>Description</li>
-					<li>Addition information</li>
-					<li>Review</li>
+					<li><span>Description</span></li>
+					<li class="p-gray">Addition information</li>
+					<li class="p-gray" id="small-header-review">Review</li>
 				</ul>
 			</div>
 			<!-- Second product -->

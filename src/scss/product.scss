@@ -9,10 +9,16 @@
 @import './productPage/product-container-top';
 @import './productPage/product-description';
 @import './productPage/cart';
+@import './productPage/category-tags-container';
+@import './productPage/small-header';
 
 .main-container {
 	margin-top: 40px;
 	margin-left: 5px;
 	width: 80%;
 	border: 1px solid red;
+}
+
+.p-gray {
+	color: $gray-text;
 }
