@@ -1,5 +1,10 @@
 // Media queries for tablets
 @media screen and (min-width: 767px) {
+	.main-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
 	// SUB-HEADER
 	.sub-header {
 		p {
@@ -53,6 +58,143 @@
 			}
 
 			#description {
+				font-size: 20px;
+			}
+		}
+	}
+
+	// CART CONTAINER
+	#cart-container {
+		#quantity-container {
+			flex-direction: row;
+			margin-bottom: 20px;
+
+			#input {
+				width: 20%;
+				justify-content: space-between;
+				margin-bottom: 0px;
+				height: 50px;
+				#number-input {
+					width: 33%;
+					height: auto;
+					font-size: 15px;
+				}
+
+				button {
+					padding-top: 0px;
+					padding-bottom: 0px;
+					font-size: 30px;
+					height: auto;
+					width: 33%;
+				}
+			}
+
+			#add-to-car-container {
+				display: flex;
+				flex-direction: row;
+				width: 60%;
+				height: 50px;
+				margin-left: 20px;
+
+				#add-to-car-button {
+					font-size: 18px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					height: 50px;
+					width: 100%;
+				}
+
+				#heart-button {
+					width: 20%;
+					font-size: 25px;
+					text-align: center;
+					justify-content: center;
+					height: 50px;
+				}
+			}
+		}
+
+		#buy-now-button {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+	}
+
+	//CATEGORY-TAGS CONTAINER
+	#category-tags-container {
+		font-size: 18px;
+		padding-bottom: 50px;
+
+		p {
+			padding-bottom: 25px;
+		}
+
+		i {
+			font-size: 22px;
+			padding-left: 20px;
+		}
+	}
+
+	//SMALL HEADER
+	#small-header {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			font-size: 20px;
+			li {
+				display: inline;
+			}
+		}
+	}
+
+	//SECOND PRODUCT CONTAINER
+	#second-product-container {
+		margin-bottom: 60px;
+		h3 {
+			font-size: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 100;
+		}
+
+		ul {
+			li {
+				font-size: 20px;
+				font-weight: 200;
+			}
+
+			li::before {
+				font-size: 25px;
+			}
+		}
+
+		img {
+			width: 75%;
+		}
+	}
+
+	//RELATED PRODUCTS CONTAINER
+	#related-products-container {
+		h2 {
+			font-size: 35px;
+			padding-bottom: 40px;
+			letter-spacing: 2px;
+		}
+
+		#thumbnails-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.image-container {
+				width: 48%;
+			}
+
+			h3,
+			p {
 				font-size: 20px;
 			}
 		}
