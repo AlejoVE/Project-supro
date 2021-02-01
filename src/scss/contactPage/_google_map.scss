@@ -1,0 +1,13 @@
+.container-map{
+    height:800px;
+    width:100%;
+    padding: 0!important;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+@media screen and(max-width:780px) {
+    .container-map{
+        height:300px;
+    }
+}
