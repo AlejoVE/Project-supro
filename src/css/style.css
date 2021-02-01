@@ -24,7 +24,9 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  max-width: 1800px !important;
+  margin: auto !important; }
 
 ol, ul {
   list-style: none; }
@@ -1889,9 +1891,5 @@ input {
     width: 100% !important; }
     .line-left p {
       margin-right: 30px; } }
-
-body {
-  max-width: 2000px !important;
-  margin: auto !important; }
 
 /*# sourceMappingURL=style.css.map */
