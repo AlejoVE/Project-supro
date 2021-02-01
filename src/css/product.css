@@ -56,38 +56,43 @@ a {
   width: 100%; }
   #cart-container #quantity-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 10px; }
-    #cart-container #quantity-container button {
+    #cart-container #quantity-container #input {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      #cart-container #quantity-container #input #number-input {
+        text-align: center;
+        border: none; }
+      #cart-container #quantity-container #input button {
+        border: none;
+        width: 40px;
+        height: 40px;
+        opacity: 0.5;
+        font-size: 25px;
+        background-color: white; }
+    #cart-container #quantity-container #add-to-car-container #add-to-car-button {
+      color: white;
+      background-color: #222222;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      width: 80%;
+      margin-bottom: 20px; }
+    #cart-container #quantity-container #add-to-car-container #heart-button {
       border: none;
       width: 40px;
       height: 40px;
       opacity: 0.5;
       font-size: 25px;
-      background-color: white; }
-    #cart-container #quantity-container #number-input {
-      text-align: center;
-      border: none; }
-  #cart-container #add-to-car-button {
-    color: white;
-    background-color: #222222;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 2px;
-    width: 80%;
-    margin-bottom: 20px; }
-  #cart-container #heart-button {
-    border: none;
-    width: 40px;
-    height: 40px;
-    opacity: 0.5;
-    font-size: 25px;
-    background-color: white;
-    font-size: 20px;
-    width: 15%;
-    margin-left: 10px; }
+      background-color: white;
+      font-size: 20px;
+      width: 15%;
+      margin-left: 10px; }
   #cart-container #buy-now-button {
     color: white;
     background-color: #222222;
@@ -129,6 +134,8 @@ a {
         opacity: 0.5; }
       #product-container-top #thumbnails-container .tiny-image-container img {
         width: 100%; }
+    #product-container-top #thumbnails-container #t-shirt-image {
+      display: none; }
 
 #product-description-container {
   margin-top: 30px; }
@@ -168,38 +175,43 @@ a {
   width: 100%; }
   #cart-container #quantity-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 10px; }
-    #cart-container #quantity-container button {
+    #cart-container #quantity-container #input {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      #cart-container #quantity-container #input #number-input {
+        text-align: center;
+        border: none; }
+      #cart-container #quantity-container #input button {
+        border: none;
+        width: 40px;
+        height: 40px;
+        opacity: 0.5;
+        font-size: 25px;
+        background-color: white; }
+    #cart-container #quantity-container #add-to-car-container #add-to-car-button {
+      color: white;
+      background-color: #222222;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      width: 80%;
+      margin-bottom: 20px; }
+    #cart-container #quantity-container #add-to-car-container #heart-button {
       border: none;
       width: 40px;
       height: 40px;
       opacity: 0.5;
       font-size: 25px;
-      background-color: white; }
-    #cart-container #quantity-container #number-input {
-      text-align: center;
-      border: none; }
-  #cart-container #add-to-car-button {
-    color: white;
-    background-color: #222222;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 2px;
-    width: 80%;
-    margin-bottom: 20px; }
-  #cart-container #heart-button {
-    border: none;
-    width: 40px;
-    height: 40px;
-    opacity: 0.5;
-    font-size: 25px;
-    background-color: white;
-    font-size: 20px;
-    width: 15%;
-    margin-left: 10px; }
+      background-color: white;
+      font-size: 20px;
+      width: 15%;
+      margin-left: 10px; }
   #cart-container #buy-now-button {
     color: white;
     background-color: #222222;
@@ -292,10 +304,32 @@ a {
       color: #f68773; }
 
 @media screen and (min-width: 767px) {
-  .sub-header {
-    border: 1px solid red; }
+  .sub-header p {
+    font-size: 20px; }
     .sub-header p .hide {
-      display: none; } }
+      display: none; }
+  #product-container-top #thumbnails-container .tiny-image-container {
+    width: 23%; }
+  #product-container-top #thumbnails-container #t-shirt-image {
+    display: inline; }
+  #product-container-top #product-description-container ul #review,
+  #product-container-top #product-description-container ul .yellow-start,
+  #product-container-top #product-description-container ul #silver-start {
+    font-size: 20px; }
+  #product-container-top #product-description-container h2 {
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #product-container-top #product-description-container .gray-light {
+    font-size: 20px;
+    margin-bottom: 25px; }
+  #product-container-top #product-description-container p {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #product-container-top #product-description-container #price {
+    font-size: 30px; }
+  #product-container-top #product-description-container #description {
+    font-size: 20px; } }
 
 .menu-active #display-menu {
   display: block;

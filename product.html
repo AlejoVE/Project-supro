@@ -149,6 +149,13 @@
 								alt="Model photo"
 							/>
 						</div>
+						<div class="tiny-image-container" id="t-shirt-image">
+							<img
+								class="opaque-image"
+								src="./assets/img/imgProduct/4.jpg"
+								alt="Model photo"
+							/>
+						</div>
 					</div>
 				</div>
 				<!-- Product description and cart -->
@@ -172,20 +179,23 @@
 					</p>
 				</div>
 				<div id="cart-container">
-					<div id="quantity-container" class="border">
-						<button class="bi bi-dash button"></button>
-						<input type="number" id="number-input" value="1" />
-						<button class="bi bi-plus button"></button>
+					<div id="quantity-container">
+						<div id="input" class="border">
+							<button class="bi bi-dash button"></button>
+							<input type="number" id="number-input" value="1" />
+							<button class="bi bi-plus button"></button>
+						</div>
+
+						<div id="add-to-car-container">
+							<button id="add-to-car-button">ADD TO CART</button>
+							<button id="heart-button" class="border">
+								<i class="bi bi-heart"></i>
+							</button>
+						</div>
 					</div>
-					<div class="border-bottom">
-						<button id="add-to-car-button">ADD TO CART</button>
-						<button id="heart-button" class="border">
-							<i class="bi bi-heart"></i></button
-						><br />
-						<button id="buy-now-button" class="border-bottom">
-							BUY NOW
-						</button>
-					</div>
+					<button id="buy-now-button" class="border-bottom">
+						BUY NOW
+					</button>
 					<div id="category-tags-container">
 						<p class="p-gray">
 							<span>CATEGORY:</span> Women, Top, Accessories, Jewellery
