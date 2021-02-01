@@ -121,14 +121,24 @@ header {
         align-items: center;
         justify-content: center;
         margin: 0 5px; }
-      .nav-left nav ul #link-nav {
+      .nav-left nav ul #link-nav-1,
+      .nav-left nav ul #link-nav-2,
+      .nav-left nav ul #link-nav-3,
+      .nav-left nav ul #link-nav-4,
+      .nav-left nav ul #link-nav-5,
+      .nav-left nav ul #link-nav-6 {
         height: auto;
         width: auto;
         padding: 10px !important;
         position: relative !important;
         font-size: 13px;
         border-bottom: 1px solid rgba(255, 255, 255, 0); }
-        .nav-left nav ul #link-nav:before {
+        .nav-left nav ul #link-nav-1:before,
+        .nav-left nav ul #link-nav-2:before,
+        .nav-left nav ul #link-nav-3:before,
+        .nav-left nav ul #link-nav-4:before,
+        .nav-left nav ul #link-nav-5:before,
+        .nav-left nav ul #link-nav-6:before {
           content: "";
           position: absolute !important;
           width: 100% !important;
@@ -139,7 +149,12 @@ header {
           visibility: hidden !important;
           transform: scaleX(0) !important;
           transition: all 0.3s ease-in-out !important; }
-        .nav-left nav ul #link-nav:hover:before {
+        .nav-left nav ul #link-nav-1:hover:before,
+        .nav-left nav ul #link-nav-2:hover:before,
+        .nav-left nav ul #link-nav-3:hover:before,
+        .nav-left nav ul #link-nav-4:hover:before,
+        .nav-left nav ul #link-nav-5:hover:before,
+        .nav-left nav ul #link-nav-6:hover:before {
           visibility: visible !important;
           transform: scaleX(1) !important; }
 
