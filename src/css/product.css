@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -346,11 +347,10 @@ header {
   #product-container-top #thumbnails-container {
     width: 100%;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
     #product-container-top #thumbnails-container .tiny-image-container {
-      width: 100%;
-      padding-left: 5px;
-      padding-right: 5px; }
+      width: 30%; }
       #product-container-top #thumbnails-container .tiny-image-container .opaque-image {
         opacity: 0.5; }
       #product-container-top #thumbnails-container .tiny-image-container img {
@@ -460,11 +460,68 @@ header {
     padding-bottom: 15px;
     font-weight: bold; }
 
+#second-product-container {
+  padding-top: 60px;
+  margin-bottom: 40px; }
+  #second-product-container h3 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 30px; }
+  #second-product-container p {
+    text-align: justify;
+    padding-bottom: 25px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: 700; }
+  #second-product-container ul {
+    font-weight: lighter; }
+    #second-product-container ul li {
+      padding-bottom: 5px;
+      margin-left: 20px;
+      text-indent: -15px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-weight: 600; }
+    #second-product-container ul li::before {
+      content: '•';
+      color: gray;
+      font-size: 20px;
+      padding-right: 5px; }
+  #second-product-container img {
+    margin-top: 5px;
+    width: 100%; }
+
+#related-products-container h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: bolder;
+  font-size: 20px; }
+
+#related-products-container #thumbnails-container .image-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px; }
+  #related-products-container #thumbnails-container .image-container h3,
+  #related-products-container #thumbnails-container .image-container p {
+    margin-top: 15px; }
+    #related-products-container #thumbnails-container .image-container h3 small,
+    #related-products-container #thumbnails-container .image-container p small {
+      color: #bdb4b4; }
+  #related-products-container #thumbnails-container .image-container ul {
+    list-style: none;
+    margin-top: 10px; }
+    #related-products-container #thumbnails-container .image-container ul li {
+      display: inline;
+      color: #f68773; }
+
 .main-container {
   margin-top: 40px;
-  margin-left: 5px;
-  width: 80%;
-  border: 1px solid red; }
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .p-gray {
   color: #a59f9f; }
