@@ -115,17 +115,19 @@
     {
         width:100%!important;
         margin:0!important;
-        padding-left:20px!important;
+        padding: 0 12px!important;
+        
     }
 
     .title-section{
         align-items: center;
+        
     }
 
     .row-title{
-        width:100%!important;
+        width:$max!important;
         margin:0!important;
-        padding:0!important;
+        padding:0 12px!important;
 
     }
 
@@ -133,9 +135,10 @@
         flex-direction: column!important;
         width: auto!important;
         height:auto!important;
+        align-items: flex-start!important;
 
         img{
-            width:250px!important;
+            width:300px!important;
             height:auto;
         }
     }
@@ -144,37 +147,38 @@
         margin-bottom: 70px !important;
         display:flex!important;
         flex-direction: column;
-        justify-content: center!important;
-        align-items: center!important;
+        align-items: flex-start!important;
+        padding: 0 12px!important;
         img{
-            width:250px!important;
+            width:300px!important;
             height: auto!important;
         }
 
         .text-big-img{
             position:static!important;
             width: 250px!important;
+            
         }
 
         #txt-big,
         .big-img-first .text-big-img{
             display:flex!important;
+            margin-top: 20px!important;
             flex-direction: column!important;
-            align-items: flex-end!important;
-            justify-content: center!important;
+            align-items: flex-start!important;
         }
         
     }
     #row-first-section{
         .small-img-first{
             margin-top:0!important;
-            align-items: center!important;
+            align-items: flex-start!important;
             width:100%!important;
+            padding: 0 12px!important;
             display:flex!important;
             flex-direction: column!important;
-            justify-content: flex-start!important;
             img {
-                width:250px!important;
+                width:300px!important;
                 height:auto!important;
             }
         }
@@ -188,11 +192,12 @@
 
     #first-section .small-img-first .text-small-img {
         display:flex!important;
-        align-items: flex-end!important;
+        align-items: flex-start!important;
         justify-content: center!important;
+        margin-top: 20px!important;
         h4{
             width: 250px!important;
-            margin-top:5px!important;
+            margin:0!important;
         }
     }
     
@@ -206,6 +211,7 @@
     #top-section .small-img-first{
         width: 100%!important;
         height: 100%!important;
+        padding: 0 12px!important;
         
         .text-small-img{
             width:250px!important;
