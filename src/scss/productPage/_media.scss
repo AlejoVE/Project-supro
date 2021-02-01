@@ -1,0 +1,10 @@
+@media screen and (min-width: 767px) {
+	.sub-header {
+		border: 1px solid red;
+		p {
+			.hide {
+				display: none;
+			}
+		}
+	}
+}

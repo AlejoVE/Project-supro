@@ -101,6 +101,8 @@ a {
 
 .sub-header {
   padding-left: 5px; }
+  .sub-header p {
+    line-height: 1.6; }
   .sub-header i {
     font-size: 5px;
     padding-left: 10px;
@@ -288,6 +290,12 @@ a {
     #related-products-container #thumbnails-container .image-container ul li {
       display: inline;
       color: #f68773; }
+
+@media screen and (min-width: 767px) {
+  .sub-header {
+    border: 1px solid red; }
+    .sub-header p .hide {
+      display: none; } }
 
 .menu-active #display-menu {
   display: block;
