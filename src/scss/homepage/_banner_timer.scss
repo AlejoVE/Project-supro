@@ -124,3 +124,17 @@ a {
     margin-right: 5px!important;
     
 }
+
+@media screen and(max-width:585px) {
+
+    #btn{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+        margin-top: 20px!important;
+        width: 70px!important;
+        height: 30px!important;
+    }
+}

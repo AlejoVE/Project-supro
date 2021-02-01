@@ -9,6 +9,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <script src="https://kit.fontawesome.com/c4bca5b848.js" crossorigin="anonymous"></script>
+    
     <title>Supro.</title>
 </head>
 
@@ -18,27 +19,27 @@
         <header class="row row-navbar">
             <div class="nav-left col-6">
                 <div class="logo-header">
-                    <a href="#"><img src="assets/img/imgHomePage/logo_supro.svg" class="img-logo" alt="logo"></a>
+                    <a href="index.html"><img src="assets/img/imgHomePage/logo_supro.svg" class="img-logo" alt="logo"></a>
                 </div>
                 <nav class="nav-list-left ">
-                    <ul class="nav-ul-left">
+                    <ul class="nav-ul-left " id="ul-nav">
                         <li class="nav-li-left">
-                            <a href="index.html">Home</a>
+                            <a href="index.html" id="link-nav">Home</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="shop.html">Shop</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="#">Collection</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="#">Pages</a>
                         </li>
-                        <li class="nav-li-left">
+                        <li class="nav-li-left" id="link-nav">
                             <a href="#">Blog</a>
                         </li>
-                        <li class="nav-li-left">
-                            <a href="#">Contact</a>
+                        <li class="nav-li-left" id="link-nav">
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -64,7 +65,9 @@
                             <a href="#"><img src="assets/img/imgIcons/shopping-cart.png" alt="icon"></a>
                         </li>
                         <li class="nav-li-right ">
-                            <a href="#"><img src="assets/img/imgIcons/menu.png" alt="icon"></a>
+                            <a href="#" id="btn-menu"><img src="assets/img/imgIcons/menu.png" alt="icon"></a>
+                            <div id="display-menu">
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -170,7 +173,7 @@
     <section class="first-section container-fluid">
         <div class="row row-first-section" id="top-section">
             <div class="col-4 col-sm-12 small-img-first" id="small-img-sm">
-                <img src="assets/img/imgHomePage/bsl1.jpg" alt="img">
+                <img src="assets/img/imgHomePage/bsl1.jpg" class="img-fluid" alt="img">
                 <div class="text-small-img">
                     <h4>Leather Shop Bag</h4>
                     <p>$59.90</p>
@@ -178,7 +181,7 @@
                 </div>
             </div>
             <div class="col-sm-12 big-img-first">
-                <img src="assets/img/imgHomePage/bsl2.jpg " alt="img">
+                <img src="assets/img/imgHomePage/bsl2.jpg " class="img-fluid" alt="img">
                 <div class="text-big-img" id="txt-big">
                     <h4>Flower Design Blouse</h4>
                     <p>$89.90</p>
@@ -191,7 +194,7 @@
     <section class="first-section container-fluid" id="first-section">
         <div class="row row-first-section" id="row-first-section">
             <div class=" col-sm-12 big-img-first">
-                <img src="assets/img/imgHomePage/bsl3.jpg " alt="img">
+                <img src="assets/img/imgHomePage/bsl3.jpg " class="img-fluid" alt="img">
                 <div class="text-big-img">
                     <h4>Glitter Decorated Shoes</h4>
                     <p>$89.90</p>
@@ -199,7 +202,7 @@
                 </div>
             </div>
             <div class="col-4 col-sm-12 small-img-first">
-                <img src="assets/img/imgHomePage/bsl4.jpg" alt="img">
+                <img src="assets/img/imgHomePage/bsl4.jpg" class="img-fluid" alt="img">
                 <div class="text-small-img">
                     <h4>Metallic Frame Glasses</h4>
                     <p>$29.90</p>
@@ -230,7 +233,7 @@
         <div class="row shop-row-1">
             <div class="col-lg-4 col-6-md image-container">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_05_1_2.jpg" alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_05_1_2.jpg" class="img-fluid" alt="sunglasses" />
                     <a href=#>Contrast Backpack</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -244,7 +247,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-2">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_08_1_6.jpg" alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_08_1_6.jpg" class="img-fluid" alt="sunglasses" />
                     <a href=#>Contrasting Design T-Shirt</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -258,7 +261,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-3">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_07_1_2.jpg" alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_07_1_2.jpg" class="img-fluid" alt="sunglasses" />
                     <a href=#>Contrasting Design T-Shirt 2</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -273,7 +276,7 @@
 
             <div class="col-lg-4 col-6-md  image-container">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_09_1_1_5.jpg" alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_09_1_1_5.jpg" class="img-fluid" alt="sunglasses" />
                     <a href=#>Cotton Sweater</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -287,7 +290,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-2">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/prd_04_1_1.jpg" alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/prd_04_1_1.jpg" class="img-fluid" alt="sunglasses" />
                     <a href=#>Black Boots</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -301,7 +304,7 @@
             </div>
             <div class="col-lg-4 col-6-md  image-container container-3">
                 <div class="content">
-                    <img src="assets/img/imgHomePage/bsl3.jpg" alt="sunglasses" />
+                    <img src="assets/img/imgHomePage/bsl3.jpg" class="img-fluid" alt="sunglasses" />
                     <a href=#>Glitter Decorated Shoes</a>
                     <ul class="ul-img-shop">
                         <li><i class="bi bi-star-fill"></i></li>
@@ -327,7 +330,7 @@
                 <p>Deal of the day</p>
                 <a href="#">Hobo Shopper Bag</a>
                 <p><span class="old-price">$79.90</span>$39.90</p>
-                <a href="#" class="btn">Save 50%</a>
+                <p class="p-btn"><a href="#" class="btn" id="btn">Save 50%</a></p>
             </div>
             <div class="container-time">
                 <div class="time">
@@ -401,14 +404,9 @@
     </section>
 
     <!-- FOOTER IMAGE -->
-
-    <div class="container-fluid images-footer">
-        <div class="row row-images-footer">
-            <img src="assets/img/imgHomePage/banner-footer.png" class="img-fluid p-0" alt="#">
-        </div>
-    </div>
-
-
+    <section class="container-fluid image-footer">
+        <img class="img-fluid" src="assets/img/imgHomePage/banner-footer.png">
+    </section>
     <!-- FOOTER -->
 
     <footer class="container-fluid container-footer">
@@ -466,6 +464,7 @@
             </div>
         </div>
     </footer>
+    <script src="src/js/menu.js"></script>
 </body>
 
 </html>
