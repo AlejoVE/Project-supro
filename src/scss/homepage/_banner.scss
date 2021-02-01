@@ -173,6 +173,7 @@
     h2 {
         text-align: end;
         font-size: $size-h2;
+        width:min-content!important;
 
         hr{
             display:none;

@@ -705,7 +705,8 @@ header {
     width: 200px; }
   #banner-text-right h2 {
     text-align: end;
-    font-size: 30px; }
+    font-size: 30px;
+    width: min-content !important; }
     #banner-text-right h2 hr {
       display: none; }
 
@@ -1211,7 +1212,8 @@ header {
     width: 200px; }
   #banner-text-right h2 {
     text-align: end;
-    font-size: 30px; }
+    font-size: 30px;
+    width: min-content !important; }
     #banner-text-right h2 hr {
       display: none; }
 
