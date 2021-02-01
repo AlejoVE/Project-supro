@@ -1,3 +1,6 @@
+@import './var';
+@import './mixin';
+
 #cart {
 	border: 1px solid red;
 	width: 100%;
@@ -19,6 +22,21 @@
 			text-align: center;
 			border: none;
 		}
+	}
+
+	#add-to-car-button {
+		@include buttonStyle;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	#buy-now-button {
+		@include buttonStyle;
+		width: 100%;
+	}
+
+	#heart-button {
+		width: 100%;
 	}
 }
 

@@ -296,6 +296,25 @@ header {
     #cart #quantity-container #number-input {
       text-align: center;
       border: none; }
+  #cart #add-to-car-button {
+    color: white;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid red;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 20px; }
+  #cart #buy-now-button {
+    color: white;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid red;
+    font-weight: bold;
+    width: 100%; }
+  #cart #heart-button {
+    width: 100%; }
 
 .plus-minus-input {
   align-items: center; }
@@ -399,6 +418,25 @@ header {
     #cart #quantity-container #number-input {
       text-align: center;
       border: none; }
+  #cart #add-to-car-button {
+    color: white;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid red;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 20px; }
+  #cart #buy-now-button {
+    color: white;
+    background-color: #222222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid red;
+    font-weight: bold;
+    width: 100%; }
+  #cart #heart-button {
+    width: 100%; }
 
 .plus-minus-input {
   align-items: center; }
