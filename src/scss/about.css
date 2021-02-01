@@ -299,6 +299,10 @@ body {
   padding: 0 1rem;
 }
 
+.supro {
+  margin-left: 40px;
+}
+
 p {
   font-family: "Roboto";
 }
@@ -306,14 +310,12 @@ p {
 .about {
   margin-left: 2rem;
   margin-top: 2rem;
+  width: 50%;
+  margin-right: 2rem;
 }
 
 .smilet {
   margin-top: 4rem;
-}
-
-.supro {
-  margin-top: 2rem;
 }
 
 .supro h4 h2 {
@@ -348,10 +350,6 @@ p {
   text-align: justify;
 }
 
-.luxtext {
-  margin-left: 40px;
-}
-
 .name {
   font-size: 20px;
 }
@@ -377,6 +375,7 @@ p {
 
 .image {
   display: flex;
+  width: 50%;
 }
 
 .ind {
@@ -399,7 +398,7 @@ h1 {
 }
 
 .luxury {
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
   color: #000;
@@ -410,6 +409,7 @@ h1 {
   color: grey;
   font-size: large;
   font-family: "Roboto";
+  text-align: justify;
 }
 
 .from {
@@ -471,10 +471,6 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.mmb {
-  margin-left: 4%;
-}
-
 .flexi {
   display: flex;
   justify-content: center;
@@ -492,11 +488,13 @@ h1 {
 .team {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .picture {
-  width: 48%;
+  width: 100%;
   text-align: center;
 }
 
@@ -506,12 +504,19 @@ h1 {
 
 .imgsize {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  border: 1px solid blue;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .imgsize img {
-  width: 33%;
-  padding-right: 30px;
+  width: 100%;
+  border: 3px solid green;
+  background-color: blue;
+  height: 30px;
 }
 
 .imgsize img:nth-child(3n) {

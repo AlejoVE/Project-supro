@@ -356,6 +356,10 @@ body {
   padding: 0 1rem;
 }
 
+.supro {
+  margin-left: 40px;
+}
+
 p {
   font-family: "Roboto";
 }
@@ -363,14 +367,12 @@ p {
 .about {
   margin-left: 2rem;
   margin-top: 2rem;
+  width: 50%;
+  margin-right: 2rem;
 }
 
 .smilet {
   margin-top: 4rem;
-}
-
-.supro {
-  margin-top: 2rem;
 }
 
 .supro h4 h2 {
@@ -405,10 +407,6 @@ p {
   text-align: justify;
 }
 
-.luxtext {
-  margin-left: 40px;
-}
-
 .name {
   font-size: 20px;
 }
@@ -436,6 +434,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
 }
 
 .ind {
@@ -458,7 +457,7 @@ h1 {
 }
 
 .luxury {
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
   color: #000;
@@ -469,6 +468,7 @@ h1 {
   color: grey;
   font-size: large;
   font-family: "Roboto";
+  text-align: justify;
 }
 
 .from {
@@ -549,10 +549,6 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.mmb {
-  margin-left: 4%;
-}
-
 .flexi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,12 +578,19 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .picture {
-  width: 48%;
+  width: 100%;
   text-align: center;
 }
 
@@ -599,13 +602,25 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  border: 1px solid blue;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .imgsize img {
-  width: 33%;
-  padding-right: 30px;
+  width: 100%;
+  border: 3px solid green;
+  background-color: blue;
+  height: 30px;
 }
 
 .imgsize img:nth-child(3n) {
