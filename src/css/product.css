@@ -510,23 +510,23 @@ header {
   font-weight: bolder;
   font-size: 20px; }
 
-#related-products-container #thumbnails-container .image-container {
+#related-products-container #thumbnails-container-related .image-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px; }
-  #related-products-container #thumbnails-container .image-container h3,
-  #related-products-container #thumbnails-container .image-container p {
+  #related-products-container #thumbnails-container-related .image-container h3,
+  #related-products-container #thumbnails-container-related .image-container p {
     margin-top: 15px; }
-    #related-products-container #thumbnails-container .image-container h3 small,
-    #related-products-container #thumbnails-container .image-container p small {
+    #related-products-container #thumbnails-container-related .image-container h3 small,
+    #related-products-container #thumbnails-container-related .image-container p small {
       color: #bdb4b4; }
-  #related-products-container #thumbnails-container .image-container ul {
+  #related-products-container #thumbnails-container-related .image-container ul {
     list-style: none;
     margin-top: 10px; }
-    #related-products-container #thumbnails-container .image-container ul li {
+    #related-products-container #thumbnails-container-related .image-container ul li {
       display: inline;
       color: #f68773; }
 
@@ -632,15 +632,15 @@ header {
     font-size: 35px;
     padding-bottom: 40px;
     letter-spacing: 2px; }
-  #related-products-container #thumbnails-container {
+  #related-products-container #thumbnails-container-related {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
-    #related-products-container #thumbnails-container .image-container {
+    #related-products-container #thumbnails-container-related .image-container {
       width: 48%; }
-    #related-products-container #thumbnails-container h3,
-    #related-products-container #thumbnails-container p {
+    #related-products-container #thumbnails-container-related h3,
+    #related-products-container #thumbnails-container-related p {
       font-size: 20px; } }
 
 @media screen and (min-width: 900px) {
@@ -749,13 +749,13 @@ header {
     margin: auto; }
     #related-products-container h2 {
       font-size: 20px; }
-    #related-products-container #thumbnails-container {
+    #related-products-container #thumbnails-container-related {
       flex-direction: row;
       flex-wrap: nowrap; }
-      #related-products-container #thumbnails-container .image-container {
+      #related-products-container #thumbnails-container-related .image-container {
         width: 24%; }
-        #related-products-container #thumbnails-container .image-container h3,
-        #related-products-container #thumbnails-container .image-container p {
+        #related-products-container #thumbnails-container-related .image-container h3,
+        #related-products-container #thumbnails-container-related .image-container p {
           font-size: 15px; }
   .container-footer .content-footer {
     padding: 0px;
