@@ -152,13 +152,22 @@ input{
     top: 4px;
     width: 12px;
     height: 12px;
+    
+}
+@media screen and(max-width:780px) {
+    #email{
+        width:150px!important;
+    }
 
 }
 
 @media screen and (max-width:480px) {
-
+    .latest-news-article{
+        padding: 0 24px!important;
+    }
     .latest-news-title{
         height: 150px!important;
+        margin: 0!important;
         padding: 0 12px!important;
     }
     .latest-news{
@@ -166,7 +175,8 @@ input{
         display :flex;
         flex-direction: column;
 
-    .img-fluid{
+    .img-fluid,
+    #news-article-1 img{
         width:320px!important;
         height:auto!important;
     }
@@ -208,11 +218,5 @@ input{
     .footer-right{
         margin:auto!important;
         width: 80%!important;
-    }
-}
-
-@media screen and(max-width:780px) {
-    #email{
-        width:150px!important;
     }
 }

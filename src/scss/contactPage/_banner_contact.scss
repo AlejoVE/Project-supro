@@ -1,3 +1,8 @@
+.container-fluid{
+    max-width: 1800px;
+    height:auto;
+}
+
 .p-grey{
     @include p-grey;
 }
