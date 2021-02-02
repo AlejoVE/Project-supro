@@ -2,6 +2,7 @@
 @import '_font.scss';
 @import 'homepage/_var.scss';
 @import 'homepage/_mixins.scss';
+@import '_navbar.scss';
 @import './productPage/cart';
 @import './productPage/sub-header';
 @import './productPage/product-container-top';
@@ -12,7 +13,6 @@
 @import './productPage/second-product-container';
 @import './productPage/related-products-container';
 @import './productPage/media';
-@import '_navbar.scss';
 @import '_footer.scss';
 
 .main-container {
