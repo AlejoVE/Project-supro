@@ -1,7 +1,6 @@
 # Project-supro
 https://samantha-35.github.io/Project-supro/.
 
-# Project-Supro
 
 This exercise was carried out during my web developer courses at BeCode Liège.
 
