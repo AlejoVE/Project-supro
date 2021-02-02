@@ -758,7 +758,7 @@ header {
         #related-products-container #thumbnails-container-related .image-container p {
           font-size: 15px; }
   .container-footer .content-footer {
-    padding: 0px;
+    padding-left: 0px;
     width: 79%; } }
 
 .container-footer {
@@ -862,8 +862,10 @@ header {
 .p-gray {
   color: #a59f9f; }
 
-.container-footer .content-footer {
-  padding: 0px;
-  width: 79%; }
+.container-footer {
+  padding-left: 5px; }
+  .container-footer .content-footer {
+    padding: 0px 10px;
+    width: 79%; }
 
 /*# sourceMappingURL=product.css.map */
