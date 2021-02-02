@@ -534,6 +534,9 @@ a {
     padding: 0px;
     width: 79%; } }
 
+body {
+  overflow-x: hidden !important; }
+
 .menu-active #display-menu {
   display: block;
   display: flex;
@@ -547,16 +550,16 @@ a {
     justify-content: center !important; }
     .menu-active #display-menu li a {
       color: white !important; }
-    .menu-active #display-menu li li:last-child {
-      border: none; }
+  .menu-active #display-menu li:nth-child(n+6) {
+    border: none !important; }
 
 #display-menu {
   width: 150px;
   height: 300px;
   background-color: rgba(141, 141, 141, 0.897);
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   position: absolute;
-  right: -70px;
+  right: -60px;
   top: 60px;
   display: none; }
 
@@ -604,14 +607,24 @@ header {
         align-items: center;
         justify-content: center;
         margin: 0 5px; }
-      .nav-left nav ul #link-nav {
+      .nav-left nav ul #link-nav-1,
+      .nav-left nav ul #link-nav-2,
+      .nav-left nav ul #link-nav-3,
+      .nav-left nav ul #link-nav-4,
+      .nav-left nav ul #link-nav-5,
+      .nav-left nav ul #link-nav-6 {
         height: auto;
         width: auto;
         padding: 10px !important;
         position: relative !important;
         font-size: 13px;
         border-bottom: 1px solid rgba(255, 255, 255, 0); }
-        .nav-left nav ul #link-nav:before {
+        .nav-left nav ul #link-nav-1:before,
+        .nav-left nav ul #link-nav-2:before,
+        .nav-left nav ul #link-nav-3:before,
+        .nav-left nav ul #link-nav-4:before,
+        .nav-left nav ul #link-nav-5:before,
+        .nav-left nav ul #link-nav-6:before {
           content: "";
           position: absolute !important;
           width: 100% !important;
@@ -622,7 +635,12 @@ header {
           visibility: hidden !important;
           transform: scaleX(0) !important;
           transition: all 0.3s ease-in-out !important; }
-        .nav-left nav ul #link-nav:hover:before {
+        .nav-left nav ul #link-nav-1:hover:before,
+        .nav-left nav ul #link-nav-2:hover:before,
+        .nav-left nav ul #link-nav-3:hover:before,
+        .nav-left nav ul #link-nav-4:hover:before,
+        .nav-left nav ul #link-nav-5:hover:before,
+        .nav-left nav ul #link-nav-6:hover:before {
           visibility: visible !important;
           transform: scaleX(1) !important; }
 
@@ -703,19 +721,15 @@ header {
   .nav-ul-left {
     margin-left: 100px !important; }
   #display-menu {
-    position: absolute;
-    right: -30px;
-    top: 60px;
-    display: none; } }
+    right: -17px !important;
+    top: 60px; } }
 
 @media screen and (max-width: 800px) {
   .nav-li-left {
     display: none !important; }
   #display-menu {
-    position: absolute;
-    right: -25px;
-    top: 55px;
-    display: none; } }
+    right: -17px !important;
+    top: 55px !important; } }
 
 @media screen and (max-width: 484px) {
   .container-fluid {
@@ -739,26 +753,13 @@ header {
     height: 12px;
     bottom: 35px; }
   #display-menu {
-    position: absolute;
-    right: -10px;
-    top: 60px;
-    display: none; } }
+    right: -20px !important;
+    top: 40px !important; } }
 
 @media screen and (max-width: 430px) {
   #display-menu {
-    position: absolute;
-    right: -40px;
-    top: 40px;
-    display: none; } }
-
-@media screen and (max-width: 400px) {
-  .row-navbar {
-    padding: 5px 10px; }
-  #display-menu {
-    position: absolute;
-    right: -40px;
-    top: 40px;
-    display: none; } }
+    right: -20px !important;
+    top: 40px !important; } }
 
 .container-footer {
   height: auto;
