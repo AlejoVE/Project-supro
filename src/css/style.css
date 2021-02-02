@@ -1865,7 +1865,7 @@ input {
             font-weight: 500; }
 
 .line-footer {
-  border-top: 1px, solid, #95959573;
+  border-top: 1px solid #95959573;
   height: 70px; }
   .line-footer .grey-text {
     color: #959595 !important;
