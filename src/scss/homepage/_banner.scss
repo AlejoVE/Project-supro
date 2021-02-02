@@ -138,11 +138,11 @@
     @include display-img-banner;
     @include size-img-banner;
     padding: $padding-img-banner; 
-    align-items: flex-end;
+    align-items: flex-start;
 
     h2 {
         font-size: $size-h2;
-        text-align: end;
+        width:min-content!important;
         
     }
 
@@ -173,6 +173,7 @@
     h2 {
         text-align: end;
         font-size: $size-h2;
+        width:min-content!important;
 
         hr{
             display:none;

@@ -1,38 +1,32 @@
 @import "_reset.scss";
-@import "aboutPage/_navbar.scss";
+@import "_navbar.scss";
 @import "_var.scss";
 @import "_font.scss";
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('/assets/Roboto/Roboto-Regular.ttf');
-}
-
+@import 'homepage/_var.scss';
+@import 'homepage/_mixins.scss';
+/*@import "_footer.scss";*/
 html {
     overflow-x: hidden;
 }
-
 body {
     padding: 0 1rem;
 }
-
+.supro{
+    margin-left: 40px;
+}
 p {
     font-family: "Roboto";
 }
-
 .about {
     margin-left: 2rem;
     margin-top: 2rem;
 }
-
 .smilet {
     margin-top: 4rem;
 }
-
 .supro {
     margin-top: 2rem;
 }
-
 .supro h4 h2 {
     margin-top: 2rem;
 }
@@ -40,11 +34,9 @@ p {
 .supro text {
     margin-top: 4rem;
 }
-
 .img {
     margin-left: 160px;
 }
-
 .title {
     color: $black;
 }
@@ -56,7 +48,9 @@ p {
 .italic {
     @include italic;
 }
-
+.luxtext{
+    margin-left: 40px;
+}
 
 .name {
     font-size: 20px;
@@ -106,6 +100,7 @@ h1 {
 
 .text {
     @include founder;
+    text-align: justify;
 }
 
 .from {
@@ -189,8 +184,6 @@ h1 {
     img {
         width: 100%;
     }
-
-    text-align: center;
 }
 
 .imgsize {
@@ -198,23 +191,17 @@ h1 {
     flex-wrap: wrap;
 
     img {
-        width: 33%;
+        width: 16%;
         padding-right: 30px;
+        height: 30px;
     }
 
     img:nth-child(3n) {
-        padding-right: 0;
+        padding-right: 40px;
     }
 }
-
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.left_footer {
-    display: flex;
-    flex-direction: column;
+.pict{
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -300,5 +287,4 @@ footer {
 
 .darkh {
     padding-left: 7px;
-
 }

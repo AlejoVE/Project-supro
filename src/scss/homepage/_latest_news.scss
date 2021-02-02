@@ -162,9 +162,12 @@ input{
 }
 
 @media screen and (max-width:480px) {
-
+    .latest-news-article{
+        padding: 0 24px!important;
+    }
     .latest-news-title{
         height: 150px!important;
+        margin: 0!important;
         padding: 0 12px!important;
     }
     .latest-news{
