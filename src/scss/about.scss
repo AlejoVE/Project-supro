@@ -29,9 +29,9 @@ p {
 
 .smilet {
     margin-top: 4rem;
+    display: flex;
 }
 .supro {
-    margin-top: 2rem;
     margin-left: 2rem;
 }
 .supro h4 h2 {
@@ -213,15 +213,15 @@ h2 {
     }
 }
 
-/*.reverse{
+.reverse{
     justify-content: space-between;
 }
 .about{
-    width: 30%;
+    width: 100%;
 }
 .image{
-    width: 50%;
-}*/
+    width: 100%;
+}
 
 .imgsize {
     display: flex;
@@ -279,8 +279,14 @@ h2 {
     }
     .image {
         display: flex;
+        width: 100%;
     }
-
+.about {
+    width: 100%;
+}
+.smilet{
+    display: flex;
+}
 }
 
 .reverse {
@@ -316,7 +322,16 @@ h2 {
             padding-right: 40px;
         }
     }
-
+    .image {
+        display: flex;
+        width: 50%;
+    }
+   .about{
+    width: 40%;
+   } 
+.bt{
+    width: 90%;
+}
 }
 
 .wkhd {
